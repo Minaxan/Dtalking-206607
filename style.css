@@ -156,12 +156,12 @@
     position: absolute !important;
     z-index: 1;
     top: 10em;
-    left: 45em;
+    left: 50em;
 }
 
 .dot--white {
     position: absolute !important;
-    top: 44em;
+    top: 43em;
     z-index: 2;
 }
 
@@ -180,7 +180,7 @@
 .dot__multiply--blue {
     position: absolute !important;
     top: 32em;
-    left: 53em;
+    left: 58em;
 }
 
 .dot__multiply--white {
@@ -232,7 +232,7 @@
 
 .multiply__introduce--blue {
     position: absolute;
-    top: 0px;
+    top: 7em;
     left: 37em;
     z-index: 10;
 }
@@ -311,7 +311,7 @@
 
 .bg__feature {
     position: absolute;
-    top: -17em;
+    top: -13em;
     right: 6em;
     z-index: 1;
 }
@@ -331,15 +331,22 @@
 
 .dot__feature--blue-3 {
     position: absolute;
-    bottom: 7em;
-    right: 7em;
+    bottom: -1em;
+    right: 10em;
     z-index: 4;
 }
 
-.dot__feature--white {
+.dot__feature--white-1 {
     position: absolute;
     top: -1em;
     right: 20em;
+    z-index: 4;
+}
+
+.dot__feature--white-2 {
+    position: absolute;
+    top: 15em;
+    right: 10em;
     z-index: 4;
 }
 
@@ -404,21 +411,21 @@
 
 .dot__experience--blue-2 {
     position: absolute;
-    bottom: 18em;
+    bottom: 7em;
     right: 18em;
     z-index: 4;
 }
 
 .dot__experience--white {
     position: absolute;
-    bottom: 33em;
+    bottom: 23em;
     right: 19em;
     z-index: 4;
 }
 
 .multiply__experience--white-1 {
     position: absolute;
-    bottom: 39em;
+    bottom: 32em;
     left: 9em;
     z-index: 4;
 }
@@ -426,14 +433,14 @@
 .multiply__experience--white-2 {
     position: absolute;
     bottom: 15em;
-    left: 5em;
+    left: 7em;
     z-index: 4;
 }
 
 .multiply__experience--blue {
     position: absolute;
-    bottom: 39em;
-    right: 15em;
+    bottom: 35em;
+    right: 17em;
     z-index: 4;
 }
 
@@ -521,4 +528,9 @@
     font-weight: 400;
     line-height: 60px;
     /* 150% */
+}
+
+.imgPhoneEnd {
+    position: relative;
+    z-index: 100;
 }
