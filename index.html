@@ -1,1224 +1,2068 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <title>Home</title>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width" />
-  <!--
+  <head>
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <!--
       Need a visual blank slate?
       Remove all code in `styles.css`!
     -->
-  <link rel="stylesheet" href="style.css">
-  <script type="module" src="script.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-</head>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="script.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  </head>
 
-<body>
-  <!-- <nav>
+  <body>
+    <!-- <nav>
   <a href="/" aria-current="page">Home</a>
   <a href="/page2.html">Other page</a>
 </nav> -->
-  <!-- startNavbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-light" aria-label="Offcanvas navbar large ">
-    <div class="container-fluid m-4">
-      <div class="logoOfWeb">
-        <svg xmlns="http://www.w3.org/2000/svg" width="103" height="49" viewBox="0 0 103 49" fill="none">
-          <g clip-path="url(#clip0_379_7773)">
+    <!-- startNavbar -->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-dark"
+      aria-label="Offcanvas navbar large "
+    >
+      <div class="container-fluid m-4">
+        <div class="logoOfWeb">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="103"
+            height="49"
+            viewBox="0 0 103 49"
+            fill="none"
+          >
+            <g clip-path="url(#clip0_379_7773)">
+              <path
+                d="M1.68619 47.8007C1.16736 47.4229 0.756622 46.9321 0.453973 46.3197C0.151324 45.7074 0 45.0472 0 44.3436C0 43.5445 0.19456 42.7888 0.58368 42.0852L20.4288 8.32626H4.53973C3.58855 8.32626 2.76707 7.94841 2.07531 7.19705C1.38354 6.4457 1.03765 5.55102 1.03765 4.51301C1.03765 3.47501 1.38354 2.52387 2.07531 1.79423C2.76707 1.06459 3.58855 0.699768 4.53973 0.699768H26.8493C27.6275 0.699768 28.3409 0.91258 28.9894 1.33386C29.5515 1.71171 29.9838 2.21551 30.2865 2.85395C30.5891 3.48804 30.7405 4.13516 30.7405 4.79532C30.7405 5.59445 30.5459 6.35015 30.1568 7.05373L10.3117 40.8083H27.1735C28.1679 40.8083 28.9981 41.1732 29.6725 41.9028C30.3427 42.6325 30.6756 43.5402 30.6756 44.6216C30.6756 45.703 30.3384 46.5543 29.6725 47.3056C29.0024 48.057 28.1679 48.4348 27.1735 48.4348H3.56693C2.9184 48.4348 2.29148 48.222 1.68619 47.8007Z"
+                fill="#387ADF"
+              />
+              <path
+                d="M96.1256 2.41531C98.2442 3.69218 99.9217 5.45548 101.15 7.70521C102.382 9.95494 103 12.5 103 15.3404C103 18.1808 102.382 20.7258 101.15 22.9756C99.9174 25.2253 98.2399 26.9886 96.1256 28.2655C94.0071 29.5423 91.6724 30.1808 89.1215 30.1808H83.2198V44.3132C83.2198 45.4989 82.8394 46.4935 82.0871 47.297C81.3304 48.1004 80.4311 48.5043 79.3935 48.5043C78.3558 48.5043 77.4046 48.1048 76.6696 47.297C75.9346 46.4935 75.5671 45.4989 75.5671 44.3132V4.6911C75.5671 3.50977 75.9346 2.5152 76.6696 1.70738C77.4046 0.899566 78.3126 0.5 79.3935 0.5H89.1215C91.6724 0.5 94.0071 1.13844 96.1256 2.41531ZM93.5012 20.487C94.7334 19.1363 95.3517 17.4207 95.3517 15.3404C95.3517 13.26 94.7334 11.5402 93.5012 10.1938C92.269 8.84311 90.7428 8.16992 88.9269 8.16992H83.2198V22.5109H88.9269C90.7428 22.5109 92.269 21.8377 93.5012 20.487Z"
+                fill="#387ADF"
+              />
+              <path
+                d="M39.5261 16.5956C41.6704 16.5956 43.4087 14.8494 43.4087 12.6955C43.4087 10.5415 41.6704 8.79535 39.5261 8.79535C37.3818 8.79535 35.6436 10.5415 35.6436 12.6955C35.6436 14.8494 37.3818 16.5956 39.5261 16.5956Z"
+                fill="#FBE74E"
+              />
+              <path
+                d="M66.7817 16.5956C68.926 16.5956 70.6643 14.8494 70.6643 12.6955C70.6643 10.5415 68.926 8.79535 66.7817 8.79535C64.6375 8.79535 62.8992 10.5415 62.8992 12.6955C62.8992 14.8494 64.6375 16.5956 66.7817 16.5956Z"
+                fill="#FBE74E"
+              />
+              <path
+                d="M67.253 24.7823H66.4142C66.4142 24.7823 66.3883 24.7823 66.371 24.7823C64.6805 24.9864 63.3229 26.3024 63.0159 27.9962C63.0159 28.0136 63.0116 28.0353 63.0116 28.0527V30.2937C63.0116 33.7248 62.082 36.4175 60.2229 38.3719C58.3638 40.3263 56.0074 41.3078 53.1539 41.3078C50.3003 41.3078 47.944 40.3306 46.0849 38.3719C44.2257 36.4175 43.2962 33.7248 43.2962 30.2937V28.0657C43.2962 28.0657 43.2962 28.0266 43.2918 28.0092C42.9892 26.3067 41.6316 24.9821 39.9324 24.778C39.9195 24.778 39.9065 24.778 39.8892 24.778H39.0504C39.0504 24.778 39.0245 24.778 39.0072 24.778C37.2994 24.9864 35.9375 26.3198 35.6435 28.0309C35.6435 28.0483 35.6392 28.07 35.6392 28.0874V30.2894C35.6392 34.1156 36.4174 37.3903 37.9739 40.1135C39.5304 42.8409 41.6273 44.9039 44.2646 46.3111C46.902 47.7182 49.8636 48.4218 53.1495 48.4218C56.4354 48.4218 59.3971 47.7182 62.0344 46.3111C64.6718 44.9039 66.7687 42.8366 68.3252 40.1135C69.8817 37.386 70.6599 34.1113 70.6599 30.2894V28.1004C70.6599 28.1004 70.6599 28.0657 70.6556 28.044C70.3703 26.3241 69.004 24.9821 67.2919 24.7736C67.2789 24.7736 67.2659 24.7736 67.2487 24.7736L67.253 24.7823Z"
+                fill="#F9A732"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0_379_7773">
+                <rect
+                  width="103"
+                  height="48"
+                  fill="white"
+                  transform="translate(0 0.5)"
+                />
+              </clipPath>
+            </defs>
+          </svg>
+        </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar2"
+          aria-controls="offcanvasNavbar2"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end text-bg-dark"
+          tabindex="-1"
+          id="offcanvasNavbar2"
+          aria-labelledby="offcanvasNavbar2Label"
+        >
+          <div class="offcanvas-header">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="103"
+              height="49"
+              viewBox="0 0 103 49"
+              fill="none"
+            >
+              <g clip-path="url(#clip0_379_7773)">
+                <path
+                  d="M1.68619 47.8007C1.16736 47.4229 0.756622 46.9321 0.453973 46.3197C0.151324 45.7074 0 45.0472 0 44.3436C0 43.5445 0.19456 42.7888 0.58368 42.0852L20.4288 8.32626H4.53973C3.58855 8.32626 2.76707 7.94841 2.07531 7.19705C1.38354 6.4457 1.03765 5.55102 1.03765 4.51301C1.03765 3.47501 1.38354 2.52387 2.07531 1.79423C2.76707 1.06459 3.58855 0.699768 4.53973 0.699768H26.8493C27.6275 0.699768 28.3409 0.91258 28.9894 1.33386C29.5515 1.71171 29.9838 2.21551 30.2865 2.85395C30.5891 3.48804 30.7405 4.13516 30.7405 4.79532C30.7405 5.59445 30.5459 6.35015 30.1568 7.05373L10.3117 40.8083H27.1735C28.1679 40.8083 28.9981 41.1732 29.6725 41.9028C30.3427 42.6325 30.6756 43.5402 30.6756 44.6216C30.6756 45.703 30.3384 46.5543 29.6725 47.3056C29.0024 48.057 28.1679 48.4348 27.1735 48.4348H3.56693C2.9184 48.4348 2.29148 48.222 1.68619 47.8007Z"
+                  fill="#387ADF"
+                />
+                <path
+                  d="M96.1256 2.41531C98.2442 3.69218 99.9217 5.45548 101.15 7.70521C102.382 9.95494 103 12.5 103 15.3404C103 18.1808 102.382 20.7258 101.15 22.9756C99.9174 25.2253 98.2399 26.9886 96.1256 28.2655C94.0071 29.5423 91.6724 30.1808 89.1215 30.1808H83.2198V44.3132C83.2198 45.4989 82.8394 46.4935 82.0871 47.297C81.3304 48.1004 80.4311 48.5043 79.3935 48.5043C78.3558 48.5043 77.4046 48.1048 76.6696 47.297C75.9346 46.4935 75.5671 45.4989 75.5671 44.3132V4.6911C75.5671 3.50977 75.9346 2.5152 76.6696 1.70738C77.4046 0.899566 78.3126 0.5 79.3935 0.5H89.1215C91.6724 0.5 94.0071 1.13844 96.1256 2.41531ZM93.5012 20.487C94.7334 19.1363 95.3517 17.4207 95.3517 15.3404C95.3517 13.26 94.7334 11.5402 93.5012 10.1938C92.269 8.84311 90.7428 8.16992 88.9269 8.16992H83.2198V22.5109H88.9269C90.7428 22.5109 92.269 21.8377 93.5012 20.487Z"
+                  fill="#387ADF"
+                />
+                <path
+                  d="M39.5261 16.5956C41.6704 16.5956 43.4087 14.8494 43.4087 12.6955C43.4087 10.5415 41.6704 8.79535 39.5261 8.79535C37.3818 8.79535 35.6436 10.5415 35.6436 12.6955C35.6436 14.8494 37.3818 16.5956 39.5261 16.5956Z"
+                  fill="#FBE74E"
+                />
+                <path
+                  d="M66.7817 16.5956C68.926 16.5956 70.6643 14.8494 70.6643 12.6955C70.6643 10.5415 68.926 8.79535 66.7817 8.79535C64.6375 8.79535 62.8992 10.5415 62.8992 12.6955C62.8992 14.8494 64.6375 16.5956 66.7817 16.5956Z"
+                  fill="#FBE74E"
+                />
+                <path
+                  d="M67.253 24.7823H66.4142C66.4142 24.7823 66.3883 24.7823 66.371 24.7823C64.6805 24.9864 63.3229 26.3024 63.0159 27.9962C63.0159 28.0136 63.0116 28.0353 63.0116 28.0527V30.2937C63.0116 33.7248 62.082 36.4175 60.2229 38.3719C58.3638 40.3263 56.0074 41.3078 53.1539 41.3078C50.3003 41.3078 47.944 40.3306 46.0849 38.3719C44.2257 36.4175 43.2962 33.7248 43.2962 30.2937V28.0657C43.2962 28.0657 43.2962 28.0266 43.2918 28.0092C42.9892 26.3067 41.6316 24.9821 39.9324 24.778C39.9195 24.778 39.9065 24.778 39.8892 24.778H39.0504C39.0504 24.778 39.0245 24.778 39.0072 24.778C37.2994 24.9864 35.9375 26.3198 35.6435 28.0309C35.6435 28.0483 35.6392 28.07 35.6392 28.0874V30.2894C35.6392 34.1156 36.4174 37.3903 37.9739 40.1135C39.5304 42.8409 41.6273 44.9039 44.2646 46.3111C46.902 47.7182 49.8636 48.4218 53.1495 48.4218C56.4354 48.4218 59.3971 47.7182 62.0344 46.3111C64.6718 44.9039 66.7687 42.8366 68.3252 40.1135C69.8817 37.386 70.6599 34.1113 70.6599 30.2894V28.1004C70.6599 28.1004 70.6599 28.0657 70.6556 28.044C70.3703 26.3241 69.004 24.9821 67.2919 24.7736C67.2789 24.7736 67.2659 24.7736 67.2487 24.7736L67.253 24.7823Z"
+                  fill="#F9A732"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_379_7773">
+                  <rect
+                    width="103"
+                    height="48"
+                    fill="white"
+                    transform="translate(0 0.5)"
+                  />
+                </clipPath>
+              </defs>
+            </svg>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Trang chủ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Giới thiệu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Tính năng</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Liên hệ</a>
+              </li>
+              <li class="nav-item">
+                <div class="settingLanguage d-flex gap-2">
+                  <div class="bg_star-red">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="21"
+                      viewBox="0 0 20 21"
+                      fill="none"
+                    >
+                      <path
+                        d="M20 8.1781L12.3658 8.1895L9.99618 0.5L7.64414 8.1895L0 8.1781L6.19015 12.8592L3.79229 20.5L10.0008 15.7551L16.2222 20.5L13.819 12.8592L20 8.1781Z"
+                        fill="#F9CB38"
+                      />
+                    </svg>
+                  </div>
+                  <p>Vie</p>
+                  <svg
+                    class="mt-2"
+                    width="24"
+                    height="25"
+                    viewBox="0 0 24 25"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g id="vuesax/linear/arrow-down">
+                      <g id="arrow-down">
+                        <path
+                          id="Vector"
+                          d="M19.9201 9.45001L13.4001 15.97C12.6301 16.74 11.3701 16.74 10.6001 15.97L4.08008 9.45001"
+                          stroke="#387ADF"
+                          stroke-width="1.5"
+                          stroke-miterlimit="10"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </g>
+                    </g>
+                  </svg>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- endNavbar -->
+    <!-- startNewFeed -->
+    <div class="container--fluid container__content--pt">
+      <div class="row col-12">
+        <!-- startContentNewFeed -->
+        <div class="container__content col-lg-6 col-sm-12">
+          <h1 class="col-8">Chào mừng bạn đến với Zup</h1>
+          <p class="container__text--dark">
+            Hãy để Zup chia sẻ câu chuyện với bạn
+          </p>
+          <div class="d-flex gap-4">
+            <div class="frame__btn--1">
+              <button type="button" class="btn btn-primary mt-3">
+                <span class="btn__text--1">Get started</span>
+                <img class="pb-2" src="./image/arrow-right.svg" alt="" />
+              </button>
+            </div>
+            <div class="frame__btn--2">
+              <button type="button" class="btn btn-light mt-3">
+                <img class="pb-2" src="./image/video-circle.svg" alt="" />
+                <span class="btn__text--2">Watch video</span>
+              </button>
+            </div>
+          </div>
+          <p class="container__textEX--blue">Trải nghiệm Zup với mình nhé</p>
+          <img class="img__androi" src="./image/androi.svg" alt="" />
+          <img class="img__appstore" src="./image/appstore.svg" alt="" />
+          <p class="container__textQr--blue">Hoặc quét mã QR</p>
+          <img class="img__qr" src="./image/QR.svg" alt="" />
+        </div>
+        <!-- endContent -->
+        <!-- startImagesNewFeed -->
+        <div class="container__img--newFeed col-lg-6 col-sm-12">
+          <div class="imgPhoneNewFeed">
+            <img src="./image/imgPhoneNewFeed1.svg" alt="" />
+          </div>
+          <div class="bg__newFeed--gradient">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="778"
+              height="778"
+              viewBox="0 0 778 778"
+              fill="none"
+            >
+              <g opacity="0.8" filter="url(#filter0_f_504_7125)">
+                <path
+                  d="M585.415 569.489C485.716 677.984 316.942 685.114 208.447 585.415C99.9524 485.716 92.8221 316.942 192.521 208.447C292.22 99.9523 460.995 92.8221 569.489 192.521C677.984 292.22 685.114 460.995 585.415 569.489Z"
+                  fill="url(#paint0_linear_504_7125)"
+                />
+              </g>
+              <defs>
+                <filter
+                  id="filter0_f_504_7125"
+                  x="0.172119"
+                  y="0.172241"
+                  width="777.592"
+                  height="777.592"
+                  filterUnits="userSpaceOnUse"
+                  color-interpolation-filters="sRGB"
+                >
+                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feBlend
+                    mode="normal"
+                    in="SourceGraphic"
+                    in2="BackgroundImageFix"
+                    result="shape"
+                  />
+                  <feGaussianBlur
+                    stdDeviation="61"
+                    result="effect1_foregroundBlur_504_7125"
+                  />
+                </filter>
+                <linearGradient
+                  id="paint0_linear_504_7125"
+                  x1="606.352"
+                  y1="220.941"
+                  x2="245.309"
+                  y2="613.835"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#4E95FF" />
+                  <stop offset="1" stop-color="#24DDD2" />
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+          <div class="dot--white">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="30"
+              height="30"
+              viewBox="0 0 30 30"
+              fill="none"
+            >
+              <g clip-path="url(#clip0_509_654)">
+                <path
+                  d="M14.95 29.89C6.7 29.89 0 23.18 0 14.95C0 6.72 6.7 0 14.95 0C23.2 0 29.89 6.71 29.89 14.95C29.89 23.19 23.19 29.9 14.95 29.9V29.89ZM14.95 5.45C9.71 5.45 5.45 9.71 5.45 14.95C5.45 20.19 9.71 24.45 14.95 24.45C20.19 24.45 24.45 20.19 24.45 14.95C24.45 9.71 20.19 5.45 14.95 5.45Z"
+                  fill="white"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_509_654">
+                  <rect width="29.89" height="29.89" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </div>
+          <div class="dot--blue">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="41"
+              height="41"
+              viewBox="0 0 41 41"
+              fill="none"
+            >
+              <g clip-path="url(#clip0_509_640)">
+                <path
+                  d="M20.14 40.28C31.263 40.28 40.28 31.263 40.28 20.14C40.28 9.01698 31.263 0 20.14 0C9.01698 0 0 9.01698 0 20.14C0 31.263 9.01698 40.28 20.14 40.28Z"
+                  fill="url(#paint0_linear_509_640)"
+                />
+              </g>
+              <defs>
+                <linearGradient
+                  id="paint0_linear_509_640"
+                  x1="20.14"
+                  y1="3.78"
+                  x2="20.14"
+                  y2="48.35"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#37CDF3" />
+                  <stop offset="0.13" stop-color="#3EB8F4" />
+                  <stop offset="0.37" stop-color="#4B97F6" />
+                  <stop offset="0.6" stop-color="#5480F7" />
+                  <stop offset="0.82" stop-color="#5A71F8" />
+                  <stop offset="1" stop-color="#5C6DF9" />
+                </linearGradient>
+                <clipPath id="clip0_509_640">
+                  <rect width="40.28" height="40.28" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </div>
+          <div class="dot--blue--reverse">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="41"
+              height="41"
+              viewBox="0 0 41 41"
+              fill="none"
+            >
+              <g clip-path="url(#clip0_509_648)">
+                <path
+                  d="M20.14 40.28C31.263 40.28 40.28 31.263 40.28 20.14C40.28 9.01698 31.263 0 20.14 0C9.01698 0 0 9.01698 0 20.14C0 31.263 9.01698 40.28 20.14 40.28Z"
+                  fill="url(#paint0_linear_509_648)"
+                  fill-opacity="0.7"
+                />
+              </g>
+              <defs>
+                <linearGradient
+                  id="paint0_linear_509_648"
+                  x1="20.14"
+                  y1="3.78"
+                  x2="20.14"
+                  y2="48.35"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#37CDF3" />
+                  <stop offset="0.13" stop-color="#3EB8F4" />
+                  <stop offset="0.37" stop-color="#4B97F6" />
+                  <stop offset="0.6" stop-color="#5480F7" />
+                  <stop offset="0.82" stop-color="#5A71F8" />
+                  <stop offset="1" stop-color="#5C6DF9" />
+                </linearGradient>
+                <clipPath id="clip0_509_648">
+                  <rect width="40.28" height="40.28" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </div>
+          <div class="dot__multiply--blue">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 32 32"
+              fill="none"
+            >
+              <g clip-path="url(#clip0_509_644)">
+                <path
+                  d="M28.49 12.55H19.33V3.39C19.33 1.52 17.81 0 15.94 0C14.07 0 12.55 1.52 12.55 3.39V12.55H3.39C1.52 12.55 0 14.07 0 15.94C0 17.81 1.52 19.33 3.39 19.33H12.55V28.5C12.55 30.37 14.07 31.89 15.94 31.89C17.81 31.89 19.33 30.37 19.33 28.5V19.33H28.49C30.36 19.33 31.88 17.81 31.88 15.94C31.88 14.07 30.36 12.55 28.49 12.55Z"
+                  fill="#387ADF"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_509_644">
+                  <rect width="31.88" height="31.88" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </div>
+          <div class="dot__multiply--white">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 32 32"
+              fill="none"
+            >
+              <g clip-path="url(#clip0_509_642)">
+                <path
+                  d="M28.49 12.55H19.33V3.39C19.33 1.52 17.81 0 15.94 0C14.07 0 12.55 1.52 12.55 3.39V12.55H3.39C1.52 12.55 0 14.07 0 15.94C0 17.81 1.52 19.33 3.39 19.33H12.55V28.5C12.55 30.37 14.07 31.89 15.94 31.89C17.81 31.89 19.33 30.37 19.33 28.5V19.33H28.49C30.36 19.33 31.88 17.81 31.88 15.94C31.88 14.07 30.36 12.55 28.49 12.55Z"
+                  fill="white"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_509_642">
+                  <rect width="31.88" height="31.88" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </div>
+          <div class="dot__multiply--greenFade">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 32 32"
+              fill="none"
+            >
+              <g clip-path="url(#clip0_509_646)">
+                <path
+                  d="M28.49 12.55H19.33V3.39C19.33 1.52 17.81 0 15.94 0C14.07 0 12.55 1.52 12.55 3.39V12.55H3.39C1.52 12.55 0 14.07 0 15.94C0 17.81 1.52 19.33 3.39 19.33H12.55V28.5C12.55 30.37 14.07 31.89 15.94 31.89C17.81 31.89 19.33 30.37 19.33 28.5V19.33H28.49C30.36 19.33 31.88 17.81 31.88 15.94C31.88 14.07 30.36 12.55 28.49 12.55Z"
+                  fill="#50C4ED"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_509_646">
+                  <rect width="31.88" height="31.88" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- endNewFeed -->
+    <!-- startPageIntroduce -->
+    <div class="container--fluid pageIntroduce">
+      <div class="row col-12">
+        <!-- strartImageIntroduce -->
+        <div class="frame__imgIntroduce col-6 position-relative">
+          <div class="imgPhoneIntroduce">
+            <img src="./image/imgPhoneIntroduce.svg" alt="" srcset="" />
+          </div>
+          <div class="bg__imgIntroduce">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="750"
+              height="778"
+              viewBox="0 0 750 778"
+              fill="none"
+            >
+              <g opacity="0.8" filter="url(#filter0_f_379_6354)">
+                <path
+                  d="M557.415 569.489C457.716 677.984 288.942 685.114 180.447 585.415C71.9524 485.716 64.8221 316.942 164.521 208.447C264.22 99.9523 432.995 92.8221 541.489 192.521C649.984 292.22 657.114 460.995 557.415 569.489Z"
+                  fill="url(#paint0_linear_379_6354)"
+                />
+              </g>
+              <defs>
+                <filter
+                  id="filter0_f_379_6354"
+                  x="-27.8279"
+                  y="0.172119"
+                  width="777.592"
+                  height="777.592"
+                  filterUnits="userSpaceOnUse"
+                  color-interpolation-filters="sRGB"
+                >
+                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feBlend
+                    mode="normal"
+                    in="SourceGraphic"
+                    in2="BackgroundImageFix"
+                    result="shape"
+                  />
+                  <feGaussianBlur
+                    stdDeviation="61"
+                    result="effect1_foregroundBlur_379_6354"
+                  />
+                </filter>
+                <linearGradient
+                  id="paint0_linear_379_6354"
+                  x1="578.352"
+                  y1="220.941"
+                  x2="217.309"
+                  y2="613.835"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#4E95FF" />
+                  <stop offset="1" stop-color="#24DDD2" />
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+          <div class="dot__introduce--blueReverse">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="41"
+              height="41"
+              viewBox="0 0 41 41"
+              fill="none"
+            >
+              <g clip-path="url(#clip0_509_656)">
+                <path
+                  d="M20.14 40.28C31.263 40.28 40.28 31.263 40.28 20.14C40.28 9.01698 31.263 0 20.14 0C9.01698 0 0 9.01698 0 20.14C0 31.263 9.01698 40.28 20.14 40.28Z"
+                  fill="url(#paint0_linear_509_656)"
+                  fill-opacity="0.7"
+                />
+              </g>
+              <defs>
+                <linearGradient
+                  id="paint0_linear_509_656"
+                  x1="20.14"
+                  y1="3.78"
+                  x2="20.14"
+                  y2="48.35"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#37CDF3" />
+                  <stop offset="0.13" stop-color="#3EB8F4" />
+                  <stop offset="0.37" stop-color="#4B97F6" />
+                  <stop offset="0.6" stop-color="#5480F7" />
+                  <stop offset="0.82" stop-color="#5A71F8" />
+                  <stop offset="1" stop-color="#5C6DF9" />
+                </linearGradient>
+                <clipPath id="clip0_509_656">
+                  <rect width="40.28" height="40.28" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </div>
+          <div class="dot__introduce--blue">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="41"
+              height="41"
+              viewBox="0 0 41 41"
+              fill="none"
+            >
+              <g clip-path="url(#clip0_509_666)">
+                <path
+                  d="M20.14 40.28C31.263 40.28 40.28 31.263 40.28 20.14C40.28 9.01698 31.263 0 20.14 0C9.01698 0 0 9.01698 0 20.14C0 31.263 9.01698 40.28 20.14 40.28Z"
+                  fill="url(#paint0_linear_509_666)"
+                />
+              </g>
+              <defs>
+                <linearGradient
+                  id="paint0_linear_509_666"
+                  x1="20.14"
+                  y1="3.78"
+                  x2="20.14"
+                  y2="48.35"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#37CDF3" />
+                  <stop offset="0.13" stop-color="#3EB8F4" />
+                  <stop offset="0.37" stop-color="#4B97F6" />
+                  <stop offset="0.6" stop-color="#5480F7" />
+                  <stop offset="0.82" stop-color="#5A71F8" />
+                  <stop offset="1" stop-color="#5C6DF9" />
+                </linearGradient>
+                <clipPath id="clip0_509_666">
+                  <rect width="40.28" height="40.28" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </div>
+          <div class="multiply__introduce--blue">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 32 32"
+              fill="none"
+            >
+              <g clip-path="url(#clip0_509_662)">
+                <path
+                  d="M28.49 12.55H19.33V3.39C19.33 1.52 17.81 0 15.94 0C14.07 0 12.55 1.52 12.55 3.39V12.55H3.39C1.52 12.55 0 14.07 0 15.94C0 17.81 1.52 19.33 3.39 19.33H12.55V28.5C12.55 30.37 14.07 31.89 15.94 31.89C17.81 31.89 19.33 30.37 19.33 28.5V19.33H28.49C30.36 19.33 31.88 17.81 31.88 15.94C31.88 14.07 30.36 12.55 28.49 12.55Z"
+                  fill="#387ADF"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_509_662">
+                  <rect width="31.88" height="31.88" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </div>
+          <div class="multiply__introduce--blueReverse">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 32 32"
+              fill="none"
+            >
+              <g clip-path="url(#clip0_509_660)">
+                <path
+                  d="M28.49 12.55H19.33V3.39C19.33 1.52 17.81 0 15.94 0C14.07 0 12.55 1.52 12.55 3.39V12.55H3.39C1.52 12.55 0 14.07 0 15.94C0 17.81 1.52 19.33 3.39 19.33H12.55V28.5C12.55 30.37 14.07 31.89 15.94 31.89C17.81 31.89 19.33 30.37 19.33 28.5V19.33H28.49C30.36 19.33 31.88 17.81 31.88 15.94C31.88 14.07 30.36 12.55 28.49 12.55Z"
+                  fill="#50C4ED"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_509_660">
+                  <rect width="31.88" height="31.88" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </div>
+          <div class="multiply__white--1">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 32 32"
+              fill="none"
+            >
+              <g clip-path="url(#clip0_509_664)">
+                <path
+                  d="M28.49 12.55H19.33V3.39C19.33 1.52 17.81 0 15.94 0C14.07 0 12.55 1.52 12.55 3.39V12.55H3.39C1.52 12.55 0 14.07 0 15.94C0 17.81 1.52 19.33 3.39 19.33H12.55V28.5C12.55 30.37 14.07 31.89 15.94 31.89C17.81 31.89 19.33 30.37 19.33 28.5V19.33H28.49C30.36 19.33 31.88 17.81 31.88 15.94C31.88 14.07 30.36 12.55 28.49 12.55Z"
+                  fill="white"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_509_664">
+                  <rect width="31.88" height="31.88" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </div>
+          <div class="multiply__white--2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 32 32"
+              fill="none"
+            >
+              <g clip-path="url(#clip0_509_668)">
+                <path
+                  d="M28.49 12.55H19.33V3.39C19.33 1.52 17.81 0 15.94 0C14.07 0 12.55 1.52 12.55 3.39V12.55H3.39C1.52 12.55 0 14.07 0 15.94C0 17.81 1.52 19.33 3.39 19.33H12.55V28.5C12.55 30.37 14.07 31.89 15.94 31.89C17.81 31.89 19.33 30.37 19.33 28.5V19.33H28.49C30.36 19.33 31.88 17.81 31.88 15.94C31.88 14.07 30.36 12.55 28.49 12.55Z"
+                  fill="white"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_509_668">
+                  <rect width="31.88" height="31.88" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </div>
+        </div>
+        <!-- endImageIntroduce -->
+        <!-- startContentIntroduce -->
+        <div class="frame__contentIntroduce col-6">
+          <div class="" style="padding-top: 184px">
+            <h1>Giới thiệu Zup</h1>
+            <p style="padding-top: 16px">
+              Zup là ứng dụng mạng xã hội trò chuyện kết bạn.
+            </p>
+            <p class="col-7 ps-5" style="padding-top: 44px">
+              Ứng dụng trò chuyện kết bạn ẩn danh
+            </p>
+            <p class="col-7 ps-5" style="padding-top: 24px">
+              Giúp bạn chia sẻ câu chuyện của mình để giải tỏa tâm trạng
+            </p>
+            <p class="col-7 ps-5" style="padding-top: 24px">
+              Giúp bạn trau dồi khả năng ngoại ngữ với bạn bè khắp nơi trên thế
+              giới
+            </p>
+          </div>
+        </div>
+        <!-- endContentIntroduce -->
+      </div>
+    </div>
+    <!-- endPageIntroduce -->
+    <!-- startPageFeature -->
+    <div class="container--fluid container__feature--margin">
+      <div class="row col-12">
+        <div class="frame__contentFeature col-6">
+          <h1>Tính năng</h1>
+          <p class="col-7 pt-4">
+            Zup sẽ mang lại cho bạn các tính năng để bạn thoải mái chia sẻ câu
+            chuyện của mình.
+          </p>
+          <p class="pt-4">
+            <img class="pe-4" src="./image/contactFeature.svg" alt="" />Kết nối
+            tự động
+          </p>
+          <p class="pt-4">
+            <img class="pe-4" src="./image/userFeature.svg" alt="" />Trò chuyện
+            theo cộng đồng
+          </p>
+          <p class="pt-4">
+            <img class="pe-4" src="./image/personalFeature.svg" alt="" />Tự tạo
+            avatar cho bản thân
+          </p>
+          <p class="pt-4">
+            <img class="pe-4" src="./image/phoneFeature.svg" alt="" />Gợi ý trò
+            chuyện
+          </p>
+        </div>
+        <!-- ******************************** -->
+        <div class="frame__imgFeature col-6 position-relative">
+          <div class="imgPhoneFeature">
+            <img src="./image/imgPhoneFeature.svg" alt="" />
+          </div>
+          <div class="bg__feature">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="671"
+              height="745"
+              viewBox="0 0 671 745"
+              fill="none"
+            >
+              <g opacity="0.8" filter="url(#filter0_f_504_7126)">
+                <path
+                  d="M388.968 622.763C241.622 622.763 122.174 503.315 122.174 355.968C122.174 208.622 241.622 89.1736 388.968 89.1736C536.315 89.1736 655.763 208.622 655.763 355.968C655.763 503.315 536.315 622.763 388.968 622.763Z"
+                  fill="url(#paint0_linear_504_7126)"
+                />
+              </g>
+              <defs>
+                <filter
+                  id="filter0_f_504_7126"
+                  x="0.173584"
+                  y="-32.8264"
+                  width="777.589"
+                  height="777.589"
+                  filterUnits="userSpaceOnUse"
+                  color-interpolation-filters="sRGB"
+                >
+                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feBlend
+                    mode="normal"
+                    in="SourceGraphic"
+                    in2="BackgroundImageFix"
+                    result="shape"
+                  />
+                  <feGaussianBlur
+                    stdDeviation="61"
+                    result="effect1_foregroundBlur_504_7126"
+                  />
+                </filter>
+                <linearGradient
+                  id="paint0_linear_504_7126"
+                  x1="659.778"
+                  y1="402.34"
+                  x2="126.189"
+                  y2="402.34"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#4E95FF" />
+                  <stop offset="1" stop-color="#24DDD2" />
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+          <div class="dot__feature--blue-1">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="41"
+              height="41"
+              viewBox="0 0 41 41"
+              fill="none"
+            >
+              <g clip-path="url(#clip0_509_684)">
+                <path
+                  d="M20.14 40.28C31.263 40.28 40.28 31.263 40.28 20.14C40.28 9.01698 31.263 0 20.14 0C9.01698 0 0 9.01698 0 20.14C0 31.263 9.01698 40.28 20.14 40.28Z"
+                  fill="url(#paint0_linear_509_684)"
+                />
+              </g>
+              <defs>
+                <linearGradient
+                  id="paint0_linear_509_684"
+                  x1="20.14"
+                  y1="3.78"
+                  x2="20.14"
+                  y2="48.35"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#37CDF3" />
+                  <stop offset="0.13" stop-color="#3EB8F4" />
+                  <stop offset="0.37" stop-color="#4B97F6" />
+                  <stop offset="0.6" stop-color="#5480F7" />
+                  <stop offset="0.82" stop-color="#5A71F8" />
+                  <stop offset="1" stop-color="#5C6DF9" />
+                </linearGradient>
+                <clipPath id="clip0_509_684">
+                  <rect width="40.28" height="40.28" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </div>
+          <div class="dot__feature--blue-2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="41"
+              height="41"
+              viewBox="0 0 41 41"
+              fill="none"
+            >
+              <g clip-path="url(#clip0_509_686)">
+                <path
+                  d="M20.14 40.28C31.263 40.28 40.28 31.263 40.28 20.14C40.28 9.01698 31.263 0 20.14 0C9.01698 0 0 9.01698 0 20.14C0 31.263 9.01698 40.28 20.14 40.28Z"
+                  fill="url(#paint0_linear_509_686)"
+                />
+              </g>
+              <defs>
+                <linearGradient
+                  id="paint0_linear_509_686"
+                  x1="20.14"
+                  y1="3.78"
+                  x2="20.14"
+                  y2="48.35"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#37CDF3" />
+                  <stop offset="0.13" stop-color="#3EB8F4" />
+                  <stop offset="0.37" stop-color="#4B97F6" />
+                  <stop offset="0.6" stop-color="#5480F7" />
+                  <stop offset="0.82" stop-color="#5A71F8" />
+                  <stop offset="1" stop-color="#5C6DF9" />
+                </linearGradient>
+                <clipPath id="clip0_509_686">
+                  <rect width="40.28" height="40.28" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </div>
+          <div class="dot__feature--blue-3">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="41"
+              height="41"
+              viewBox="0 0 41 41"
+              fill="none"
+            >
+              <g clip-path="url(#clip0_509_674)">
+                <path
+                  d="M20.14 40.28C31.263 40.28 40.28 31.263 40.28 20.14C40.28 9.01698 31.263 0 20.14 0C9.01698 0 0 9.01698 0 20.14C0 31.263 9.01698 40.28 20.14 40.28Z"
+                  fill="url(#paint0_linear_509_674)"
+                />
+              </g>
+              <defs>
+                <linearGradient
+                  id="paint0_linear_509_674"
+                  x1="20.14"
+                  y1="3.78"
+                  x2="20.14"
+                  y2="48.35"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#37CDF3" />
+                  <stop offset="0.13" stop-color="#3EB8F4" />
+                  <stop offset="0.37" stop-color="#4B97F6" />
+                  <stop offset="0.6" stop-color="#5480F7" />
+                  <stop offset="0.82" stop-color="#5A71F8" />
+                  <stop offset="1" stop-color="#5C6DF9" />
+                </linearGradient>
+                <clipPath id="clip0_509_674">
+                  <rect width="40.28" height="40.28" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </div>
+          <div class="dot__feature--white-1">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="30"
+              height="30"
+              viewBox="0 0 30 30"
+              fill="none"
+            >
+              <g clip-path="url(#clip0_509_688)">
+                <path
+                  d="M14.95 29.89C6.7 29.89 0 23.18 0 14.95C0 6.72 6.7 0 14.95 0C23.2 0 29.89 6.71 29.89 14.95C29.89 23.19 23.19 29.9 14.95 29.9V29.89ZM14.95 5.45C9.71 5.45 5.45 9.71 5.45 14.95C5.45 20.19 9.71 24.45 14.95 24.45C20.19 24.45 24.45 20.19 24.45 14.95C24.45 9.71 20.19 5.45 14.95 5.45Z"
+                  fill="white"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_509_688">
+                  <rect width="29.89" height="29.89" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </div>
+          <div class="dot__feature--white-2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="30"
+              height="30"
+              viewBox="0 0 30 30"
+              fill="none"
+            >
+              <g clip-path="url(#clip0_509_688)">
+                <path
+                  d="M14.95 29.89C6.7 29.89 0 23.18 0 14.95C0 6.72 6.7 0 14.95 0C23.2 0 29.89 6.71 29.89 14.95C29.89 23.19 23.19 29.9 14.95 29.9V29.89ZM14.95 5.45C9.71 5.45 5.45 9.71 5.45 14.95C5.45 20.19 9.71 24.45 14.95 24.45C20.19 24.45 24.45 20.19 24.45 14.95C24.45 9.71 20.19 5.45 14.95 5.45Z"
+                  fill="white"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_509_688">
+                  <rect width="29.89" height="29.89" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </div>
+          <div class="multiply__feature--white">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 32 32"
+              fill="none"
+            >
+              <g clip-path="url(#clip0_509_680)">
+                <path
+                  d="M28.49 12.55H19.33V3.39C19.33 1.52 17.81 0 15.94 0C14.07 0 12.55 1.52 12.55 3.39V12.55H3.39C1.52 12.55 0 14.07 0 15.94C0 17.81 1.52 19.33 3.39 19.33H12.55V28.5C12.55 30.37 14.07 31.89 15.94 31.89C17.81 31.89 19.33 30.37 19.33 28.5V19.33H28.49C30.36 19.33 31.88 17.81 31.88 15.94C31.88 14.07 30.36 12.55 28.49 12.55Z"
+                  fill="white"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_509_680">
+                  <rect width="31.88" height="31.88" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </div>
+          <div class="multiply__feature--blueReverse">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 32 32"
+              fill="none"
+            >
+              <g clip-path="url(#clip0_509_676)">
+                <path
+                  d="M28.49 12.55H19.33V3.39C19.33 1.52 17.81 0 15.94 0C14.07 0 12.55 1.52 12.55 3.39V12.55H3.39C1.52 12.55 0 14.07 0 15.94C0 17.81 1.52 19.33 3.39 19.33H12.55V28.5C12.55 30.37 14.07 31.89 15.94 31.89C17.81 31.89 19.33 30.37 19.33 28.5V19.33H28.49C30.36 19.33 31.88 17.81 31.88 15.94C31.88 14.07 30.36 12.55 28.49 12.55Z"
+                  fill="#50C4ED"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_509_676">
+                  <rect width="31.88" height="31.88" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </div>
+          <div class="multiply__feature--blue">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 32 32"
+              fill="none"
+            >
+              <g clip-path="url(#clip0_509_682)">
+                <path
+                  d="M28.49 12.55H19.33V3.39C19.33 1.52 17.81 0 15.94 0C14.07 0 12.55 1.52 12.55 3.39V12.55H3.39C1.52 12.55 0 14.07 0 15.94C0 17.81 1.52 19.33 3.39 19.33H12.55V28.5C12.55 30.37 14.07 31.89 15.94 31.89C17.81 31.89 19.33 30.37 19.33 28.5V19.33H28.49C30.36 19.33 31.88 17.81 31.88 15.94C31.88 14.07 30.36 12.55 28.49 12.55Z"
+                  fill="#387ADF"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_509_682">
+                  <rect width="31.88" height="31.88" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- endPageFeature -->
+    <!-- startPageExperience -->
+    <div class="container--fluid container__experience--marign">
+      <div class="row col-12">
+        <div class="frame__imgExperience col-6 position-relative">
+          <div class="imgPhoneExperience">
+            <img src="./image/imgPhoneExperience.svg" alt="" />
+          </div>
+          <div class="bg__experience">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="759"
+              height="778"
+              viewBox="0 0 759 778"
+              fill="none"
+            >
+              <g opacity="0.8" filter="url(#filter0_f_504_7127)">
+                <path
+                  d="M503.365 157.918C630.971 231.591 674.692 394.76 601.019 522.366C527.346 649.972 364.177 693.693 236.571 620.019C108.965 546.346 65.244 383.177 138.917 255.571C212.591 127.965 375.76 84.2443 503.365 157.918Z"
+                  fill="url(#paint0_linear_504_7127)"
+                />
+              </g>
+              <defs>
+                <filter
+                  id="filter0_f_504_7127"
+                  x="-18.8708"
+                  y="0.129395"
+                  width="777.678"
+                  height="777.678"
+                  filterUnits="userSpaceOnUse"
+                  color-interpolation-filters="sRGB"
+                >
+                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feBlend
+                    mode="normal"
+                    in="SourceGraphic"
+                    in2="BackgroundImageFix"
+                    result="shape"
+                  />
+                  <feGaussianBlur
+                    stdDeviation="61"
+                    result="effect1_foregroundBlur_504_7127"
+                  />
+                </filter>
+                <linearGradient
+                  id="paint0_linear_504_7127"
+                  x1="158.626"
+                  y1="213.404"
+                  x2="620.727"
+                  y2="480.198"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#4E95FF" />
+                  <stop offset="1" stop-color="#24DDD2" />
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+          <div class="dot__experience--blue">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="41"
+              height="41"
+              viewBox="0 0 41 41"
+              fill="none"
+            >
+              <g clip-path="url(#clip0_509_674)">
+                <path
+                  d="M20.14 40.28C31.263 40.28 40.28 31.263 40.28 20.14C40.28 9.01698 31.263 0 20.14 0C9.01698 0 0 9.01698 0 20.14C0 31.263 9.01698 40.28 20.14 40.28Z"
+                  fill="url(#paint0_linear_509_674)"
+                />
+              </g>
+              <defs>
+                <linearGradient
+                  id="paint0_linear_509_674"
+                  x1="20.14"
+                  y1="3.78"
+                  x2="20.14"
+                  y2="48.35"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#37CDF3" />
+                  <stop offset="0.13" stop-color="#3EB8F4" />
+                  <stop offset="0.37" stop-color="#4B97F6" />
+                  <stop offset="0.6" stop-color="#5480F7" />
+                  <stop offset="0.82" stop-color="#5A71F8" />
+                  <stop offset="1" stop-color="#5C6DF9" />
+                </linearGradient>
+                <clipPath id="clip0_509_674">
+                  <rect width="40.28" height="40.28" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </div>
+          <div class="dot__experience--blueReverse-1">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="41"
+              height="41"
+              viewBox="0 0 41 41"
+              fill="none"
+            >
+              <g clip-path="url(#clip0_509_648)">
+                <path
+                  d="M20.14 40.28C31.263 40.28 40.28 31.263 40.28 20.14C40.28 9.01698 31.263 0 20.14 0C9.01698 0 0 9.01698 0 20.14C0 31.263 9.01698 40.28 20.14 40.28Z"
+                  fill="url(#paint0_linear_509_648)"
+                  fill-opacity="0.7"
+                />
+              </g>
+              <defs>
+                <linearGradient
+                  id="paint0_linear_509_648"
+                  x1="20.14"
+                  y1="3.78"
+                  x2="20.14"
+                  y2="48.35"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#37CDF3" />
+                  <stop offset="0.13" stop-color="#3EB8F4" />
+                  <stop offset="0.37" stop-color="#4B97F6" />
+                  <stop offset="0.6" stop-color="#5480F7" />
+                  <stop offset="0.82" stop-color="#5A71F8" />
+                  <stop offset="1" stop-color="#5C6DF9" />
+                </linearGradient>
+                <clipPath id="clip0_509_648">
+                  <rect width="40.28" height="40.28" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </div>
+          <div class="dot__experience--blue-2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="41"
+              height="41"
+              viewBox="0 0 41 41"
+              fill="none"
+            >
+              <g clip-path="url(#clip0_509_648)">
+                <path
+                  d="M20.14 40.28C31.263 40.28 40.28 31.263 40.28 20.14C40.28 9.01698 31.263 0 20.14 0C9.01698 0 0 9.01698 0 20.14C0 31.263 9.01698 40.28 20.14 40.28Z"
+                  fill="url(#paint0_linear_509_648)"
+                  fill-opacity="0.7"
+                />
+              </g>
+              <defs>
+                <linearGradient
+                  id="paint0_linear_509_648"
+                  x1="20.14"
+                  y1="3.78"
+                  x2="20.14"
+                  y2="48.35"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#37CDF3" />
+                  <stop offset="0.13" stop-color="#3EB8F4" />
+                  <stop offset="0.37" stop-color="#4B97F6" />
+                  <stop offset="0.6" stop-color="#5480F7" />
+                  <stop offset="0.82" stop-color="#5A71F8" />
+                  <stop offset="1" stop-color="#5C6DF9" />
+                </linearGradient>
+                <clipPath id="clip0_509_648">
+                  <rect width="40.28" height="40.28" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </div>
+          <div class="dot__experience--white">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="30"
+              height="30"
+              viewBox="0 0 30 30"
+              fill="none"
+            >
+              <g clip-path="url(#clip0_509_688)">
+                <path
+                  d="M14.95 29.89C6.7 29.89 0 23.18 0 14.95C0 6.72 6.7 0 14.95 0C23.2 0 29.89 6.71 29.89 14.95C29.89 23.19 23.19 29.9 14.95 29.9V29.89ZM14.95 5.45C9.71 5.45 5.45 9.71 5.45 14.95C5.45 20.19 9.71 24.45 14.95 24.45C20.19 24.45 24.45 20.19 24.45 14.95C24.45 9.71 20.19 5.45 14.95 5.45Z"
+                  fill="white"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_509_688">
+                  <rect width="29.89" height="29.89" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </div>
+          <div class="multiply__experience--white-1">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 32 32"
+              fill="none"
+            >
+              <g clip-path="url(#clip0_509_664)">
+                <path
+                  d="M28.49 12.55H19.33V3.39C19.33 1.52 17.81 0 15.94 0C14.07 0 12.55 1.52 12.55 3.39V12.55H3.39C1.52 12.55 0 14.07 0 15.94C0 17.81 1.52 19.33 3.39 19.33H12.55V28.5C12.55 30.37 14.07 31.89 15.94 31.89C17.81 31.89 19.33 30.37 19.33 28.5V19.33H28.49C30.36 19.33 31.88 17.81 31.88 15.94C31.88 14.07 30.36 12.55 28.49 12.55Z"
+                  fill="white"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_509_664">
+                  <rect width="31.88" height="31.88" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </div>
+          <div class="multiply__experience--white-2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 32 32"
+              fill="none"
+            >
+              <g clip-path="url(#clip0_509_707)">
+                <path
+                  d="M28.49 12.55H19.33V3.39C19.33 1.52 17.81 0 15.94 0C14.07 0 12.55 1.52 12.55 3.39V12.55H3.39C1.52 12.55 0 14.07 0 15.94C0 17.81 1.52 19.33 3.39 19.33H12.55V28.5C12.55 30.37 14.07 31.89 15.94 31.89C17.81 31.89 19.33 30.37 19.33 28.5V19.33H28.49C30.36 19.33 31.88 17.81 31.88 15.94C31.88 14.07 30.36 12.55 28.49 12.55Z"
+                  fill="#50C4ED"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_509_707">
+                  <rect width="31.88" height="31.88" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </div>
+          <div class="multiply__experience--blue">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 32 32"
+              fill="none"
+            >
+              <g clip-path="url(#clip0_509_662)">
+                <path
+                  d="M28.49 12.55H19.33V3.39C19.33 1.52 17.81 0 15.94 0C14.07 0 12.55 1.52 12.55 3.39V12.55H3.39C1.52 12.55 0 14.07 0 15.94C0 17.81 1.52 19.33 3.39 19.33H12.55V28.5C12.55 30.37 14.07 31.89 15.94 31.89C17.81 31.89 19.33 30.37 19.33 28.5V19.33H28.49C30.36 19.33 31.88 17.81 31.88 15.94C31.88 14.07 30.36 12.55 28.49 12.55Z"
+                  fill="#387ADF"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_509_662">
+                  <rect width="31.88" height="31.88" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </div>
+        </div>
+        <!-- *************************** -->
+        <div class="frame__contentExperience col-6">
+          <h1>Trải nghiệm Zup</h1>
+          <p style="margin-top: 16px">Đăng kí trải nghiệm Zup</p>
+          <p class="ps-5" style="margin-top: 44px">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <path
+                d="M5 20C5 16.134 8.13401 13 12 13C15.866 13 19 16.134 19 20"
+                stroke="#387ADF"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M12 10C14.2091 10 16 8.20914 16 6C16 3.79086 14.2091 2 12 2C9.79086 2 8 3.79086 8 6C8 8.20914 9.79086 10 12 10Z"
+                stroke="#387ADF"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              /></svg
+            ><span style="padding-left: 22px"
+              >Bước 1: Điền thông tin cơ bản</span
+            >
+          </p>
+          <p class="ps-5" style="margin-top: 44px">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="28"
+              height="28"
+              viewBox="0 0 28 28"
+              fill="none"
+            >
+              <path
+                d="M10.5001 15.1667C11.7887 15.1667 12.8334 14.122 12.8334 12.8333C12.8334 11.5447 11.7887 10.5 10.5001 10.5C9.21142 10.5 8.16675 11.5447 8.16675 12.8333C8.16675 14.122 9.21142 15.1667 10.5001 15.1667Z"
+                stroke="#387ADF"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M23.3333 7H4.66667C4.02233 7 3.5 7.52233 3.5 8.16667V19.8333C3.5 20.4777 4.02234 21 4.66667 21H23.3333C23.9777 21 24.5 20.4777 24.5 19.8333V8.16667C24.5 7.52233 23.9777 7 23.3333 7Z"
+                stroke="#387ADF"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M7 21C7 19.067 8.567 17.5 10.5 17.5C12.433 17.5 14 19.067 14 21"
+                stroke="#387ADF"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M20.9999 16.3335L16.3333 16.3335"
+                stroke="#387ADF"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M21 12.8335L17.5 12.8335"
+                stroke="#387ADF"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              /></svg
+            ><span style="padding-left: 22px"
+              >Bước 2: Nhập số điện thoại đăng kí và xác thực mã OTP</span
+            >
+          </p>
+          <p class="ps-5" style="margin-top: 44px">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <path
+                d="M19 3H5C4.44772 3 4 3.44771 4 4V10.1649C4 17.5464 10.2742 20.3516 11.7098 20.8968C11.9 20.9691 12.1 20.9691 12.2902 20.8968C13.7258 20.3516 20 17.5464 20 10.1649V4C20 3.44772 19.5523 3 19 3Z"
+                stroke="#387ADF"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M15 9L11 13L9 11"
+                stroke="#387ADF"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              /></svg
+            ><span style="padding-left: 22px"
+              >Bước 3: Cài đặt mật khẩu cho tài khoản</span
+            >
+          </p>
+          <p class="ps-5" style="margin-top: 44px">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <path
+                d="M4 20H20"
+                stroke="#387ADF"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M4 19.9998H8L19.2929 8.70696C19.6834 8.31643 19.6834 7.68327 19.2929 7.29274L16.7071 4.70696C16.3166 4.31643 15.6834 4.31643 15.2929 4.70696L4 15.9998V19.9998Z"
+                stroke="#387ADF"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M12 8L16 12"
+                stroke="#387ADF"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              /></svg
+            ><span style="padding-left: 22px"
+              >Bước 4: Điền tên và thông tin để Zup ghi nhớ</span
+            >
+          </p>
+          <p style="margin-top: 54px">Vào trang chủ trải nghiệm Zup nhé</p>
+        </div>
+      </div>
+    </div>
+    <!-- endPageExperience -->
+    <!-- startPageEnd -->
+    <div class="container--fluid container__end--marign imgPhoneEnd">
+      <div class="row col-12">
+        <div class="d-grid justify-content-center" style="z-index: 100">
+          <img src="./image/imgPhoneEnd.svg" alt="" />
+        </div>
+      </div>
+      <div class="bg__end--1 position-absolute" style="z-index: 3; top: -10em">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="671"
+          height="745"
+          viewBox="0 0 671 745"
+          fill="none"
+        >
+          <g opacity="0.8" filter="url(#filter0_f_504_7126)">
             <path
-              d="M1.68619 47.8007C1.16736 47.4229 0.756622 46.9321 0.453973 46.3197C0.151324 45.7074 0 45.0472 0 44.3436C0 43.5445 0.19456 42.7888 0.58368 42.0852L20.4288 8.32626H4.53973C3.58855 8.32626 2.76707 7.94841 2.07531 7.19705C1.38354 6.4457 1.03765 5.55102 1.03765 4.51301C1.03765 3.47501 1.38354 2.52387 2.07531 1.79423C2.76707 1.06459 3.58855 0.699768 4.53973 0.699768H26.8493C27.6275 0.699768 28.3409 0.91258 28.9894 1.33386C29.5515 1.71171 29.9838 2.21551 30.2865 2.85395C30.5891 3.48804 30.7405 4.13516 30.7405 4.79532C30.7405 5.59445 30.5459 6.35015 30.1568 7.05373L10.3117 40.8083H27.1735C28.1679 40.8083 28.9981 41.1732 29.6725 41.9028C30.3427 42.6325 30.6756 43.5402 30.6756 44.6216C30.6756 45.703 30.3384 46.5543 29.6725 47.3056C29.0024 48.057 28.1679 48.4348 27.1735 48.4348H3.56693C2.9184 48.4348 2.29148 48.222 1.68619 47.8007Z"
-              fill="#387ADF" />
-            <path
-              d="M96.1256 2.41531C98.2442 3.69218 99.9217 5.45548 101.15 7.70521C102.382 9.95494 103 12.5 103 15.3404C103 18.1808 102.382 20.7258 101.15 22.9756C99.9174 25.2253 98.2399 26.9886 96.1256 28.2655C94.0071 29.5423 91.6724 30.1808 89.1215 30.1808H83.2198V44.3132C83.2198 45.4989 82.8394 46.4935 82.0871 47.297C81.3304 48.1004 80.4311 48.5043 79.3935 48.5043C78.3558 48.5043 77.4046 48.1048 76.6696 47.297C75.9346 46.4935 75.5671 45.4989 75.5671 44.3132V4.6911C75.5671 3.50977 75.9346 2.5152 76.6696 1.70738C77.4046 0.899566 78.3126 0.5 79.3935 0.5H89.1215C91.6724 0.5 94.0071 1.13844 96.1256 2.41531ZM93.5012 20.487C94.7334 19.1363 95.3517 17.4207 95.3517 15.3404C95.3517 13.26 94.7334 11.5402 93.5012 10.1938C92.269 8.84311 90.7428 8.16992 88.9269 8.16992H83.2198V22.5109H88.9269C90.7428 22.5109 92.269 21.8377 93.5012 20.487Z"
-              fill="#387ADF" />
-            <path
-              d="M39.5261 16.5956C41.6704 16.5956 43.4087 14.8494 43.4087 12.6955C43.4087 10.5415 41.6704 8.79535 39.5261 8.79535C37.3818 8.79535 35.6436 10.5415 35.6436 12.6955C35.6436 14.8494 37.3818 16.5956 39.5261 16.5956Z"
-              fill="#FBE74E" />
-            <path
-              d="M66.7817 16.5956C68.926 16.5956 70.6643 14.8494 70.6643 12.6955C70.6643 10.5415 68.926 8.79535 66.7817 8.79535C64.6375 8.79535 62.8992 10.5415 62.8992 12.6955C62.8992 14.8494 64.6375 16.5956 66.7817 16.5956Z"
-              fill="#FBE74E" />
-            <path
-              d="M67.253 24.7823H66.4142C66.4142 24.7823 66.3883 24.7823 66.371 24.7823C64.6805 24.9864 63.3229 26.3024 63.0159 27.9962C63.0159 28.0136 63.0116 28.0353 63.0116 28.0527V30.2937C63.0116 33.7248 62.082 36.4175 60.2229 38.3719C58.3638 40.3263 56.0074 41.3078 53.1539 41.3078C50.3003 41.3078 47.944 40.3306 46.0849 38.3719C44.2257 36.4175 43.2962 33.7248 43.2962 30.2937V28.0657C43.2962 28.0657 43.2962 28.0266 43.2918 28.0092C42.9892 26.3067 41.6316 24.9821 39.9324 24.778C39.9195 24.778 39.9065 24.778 39.8892 24.778H39.0504C39.0504 24.778 39.0245 24.778 39.0072 24.778C37.2994 24.9864 35.9375 26.3198 35.6435 28.0309C35.6435 28.0483 35.6392 28.07 35.6392 28.0874V30.2894C35.6392 34.1156 36.4174 37.3903 37.9739 40.1135C39.5304 42.8409 41.6273 44.9039 44.2646 46.3111C46.902 47.7182 49.8636 48.4218 53.1495 48.4218C56.4354 48.4218 59.3971 47.7182 62.0344 46.3111C64.6718 44.9039 66.7687 42.8366 68.3252 40.1135C69.8817 37.386 70.6599 34.1113 70.6599 30.2894V28.1004C70.6599 28.1004 70.6599 28.0657 70.6556 28.044C70.3703 26.3241 69.004 24.9821 67.2919 24.7736C67.2789 24.7736 67.2659 24.7736 67.2487 24.7736L67.253 24.7823Z"
-              fill="#F9A732" />
+              d="M388.968 622.763C241.622 622.763 122.174 503.315 122.174 355.968C122.174 208.622 241.622 89.1736 388.968 89.1736C536.315 89.1736 655.763 208.622 655.763 355.968C655.763 503.315 536.315 622.763 388.968 622.763Z"
+              fill="url(#paint0_linear_504_7126)"
+            />
           </g>
           <defs>
-            <clipPath id="clip0_379_7773">
-              <rect width="103" height="48" fill="white" transform="translate(0 0.5)" />
+            <filter
+              id="filter0_f_504_7126"
+              x="0.173584"
+              y="-32.8264"
+              width="777.589"
+              height="777.589"
+              filterUnits="userSpaceOnUse"
+              color-interpolation-filters="sRGB"
+            >
+              <feFlood flood-opacity="0" result="BackgroundImageFix" />
+              <feBlend
+                mode="normal"
+                in="SourceGraphic"
+                in2="BackgroundImageFix"
+                result="shape"
+              />
+              <feGaussianBlur
+                stdDeviation="61"
+                result="effect1_foregroundBlur_504_7126"
+              />
+            </filter>
+            <linearGradient
+              id="paint0_linear_504_7126"
+              x1="659.778"
+              y1="402.34"
+              x2="126.189"
+              y2="402.34"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop stop-color="#4E95FF" />
+              <stop offset="1" stop-color="#24DDD2" />
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
+      <div
+        class="bg__end--2 position-absolute"
+        style="z-index: 4; bottom: -4em; right: 9em"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="671"
+          height="745"
+          viewBox="0 0 671 745"
+          fill="none"
+        >
+          <g opacity="0.8" filter="url(#filter0_f_504_7126)">
+            <path
+              d="M388.968 622.763C241.622 622.763 122.174 503.315 122.174 355.968C122.174 208.622 241.622 89.1736 388.968 89.1736C536.315 89.1736 655.763 208.622 655.763 355.968C655.763 503.315 536.315 622.763 388.968 622.763Z"
+              fill="url(#paint0_linear_504_7126)"
+            />
+          </g>
+          <defs>
+            <filter
+              id="filter0_f_504_7126"
+              x="0.173584"
+              y="-32.8264"
+              width="777.589"
+              height="777.589"
+              filterUnits="userSpaceOnUse"
+              color-interpolation-filters="sRGB"
+            >
+              <feFlood flood-opacity="0" result="BackgroundImageFix" />
+              <feBlend
+                mode="normal"
+                in="SourceGraphic"
+                in2="BackgroundImageFix"
+                result="shape"
+              />
+              <feGaussianBlur
+                stdDeviation="61"
+                result="effect1_foregroundBlur_504_7126"
+              />
+            </filter>
+            <linearGradient
+              id="paint0_linear_504_7126"
+              x1="659.778"
+              y1="402.34"
+              x2="126.189"
+              y2="402.34"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop stop-color="#4E95FF" />
+              <stop offset="1" stop-color="#24DDD2" />
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
+      <div
+        class="multiply__end--blue-1 position-absolute"
+        style="z-index: 120; top: -1em; left: 33em"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="32"
+          height="32"
+          viewBox="0 0 32 32"
+          fill="none"
+        >
+          <path
+            d="M28.49 12.55H19.33V3.39C19.33 1.52 17.81 0 15.94 0C14.07 0 12.55 1.52 12.55 3.39V12.55H3.39C1.52 12.55 0 14.07 0 15.94C0 17.81 1.52 19.33 3.39 19.33H12.55V28.5C12.55 30.37 14.07 31.89 15.94 31.89C17.81 31.89 19.33 30.37 19.33 28.5V19.33H28.49C30.36 19.33 31.88 17.81 31.88 15.94C31.88 14.07 30.36 12.55 28.49 12.55Z"
+            fill="#387ADF"
+          />
+        </svg>
+      </div>
+      <div
+        class="multiply__end--blue-2 position-absolute"
+        style="z-index: 121; bottom: 5em; left: 43em"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="32"
+          height="32"
+          viewBox="0 0 32 32"
+          fill="none"
+        >
+          <path
+            d="M28.49 12.55H19.33V3.39C19.33 1.52 17.81 0 15.94 0C14.07 0 12.55 1.52 12.55 3.39V12.55H3.39C1.52 12.55 0 14.07 0 15.94C0 17.81 1.52 19.33 3.39 19.33H12.55V28.5C12.55 30.37 14.07 31.89 15.94 31.89C17.81 31.89 19.33 30.37 19.33 28.5V19.33H28.49C30.36 19.33 31.88 17.81 31.88 15.94C31.88 14.07 30.36 12.55 28.49 12.55Z"
+            fill="#387ADF"
+          />
+        </svg>
+      </div>
+      <div
+        class="multiply__end--blue-3 position-absolute"
+        style="z-index: 122; bottom: 27em; right: 16em"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="32"
+          height="32"
+          viewBox="0 0 32 32"
+          fill="none"
+        >
+          <path
+            d="M28.49 12.55H19.33V3.39C19.33 1.52 17.81 0 15.94 0C14.07 0 12.55 1.52 12.55 3.39V12.55H3.39C1.52 12.55 0 14.07 0 15.94C0 17.81 1.52 19.33 3.39 19.33H12.55V28.5C12.55 30.37 14.07 31.89 15.94 31.89C17.81 31.89 19.33 30.37 19.33 28.5V19.33H28.49C30.36 19.33 31.88 17.81 31.88 15.94C31.88 14.07 30.36 12.55 28.49 12.55Z"
+            fill="#387ADF"
+          />
+        </svg>
+      </div>
+      <div
+        class="multiply__end--blueBlur position-absolute"
+        style="z-index: 123; top: -1em; right: 37em"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="32"
+          height="32"
+          viewBox="0 0 32 32"
+          fill="none"
+        >
+          <g clip-path="url(#clip0_509_707)">
+            <path
+              d="M28.49 12.55H19.33V3.39C19.33 1.52 17.81 0 15.94 0C14.07 0 12.55 1.52 12.55 3.39V12.55H3.39C1.52 12.55 0 14.07 0 15.94C0 17.81 1.52 19.33 3.39 19.33H12.55V28.5C12.55 30.37 14.07 31.89 15.94 31.89C17.81 31.89 19.33 30.37 19.33 28.5V19.33H28.49C30.36 19.33 31.88 17.81 31.88 15.94C31.88 14.07 30.36 12.55 28.49 12.55Z"
+              fill="#50C4ED"
+            />
+          </g>
+          <defs>
+            <clipPath id="clip0_509_707">
+              <rect width="31.88" height="31.88" fill="white" />
             </clipPath>
           </defs>
         </svg>
       </div>
-      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2"
-        aria-controls="offcanvasNavbar2" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar2"
-        aria-labelledby="offcanvasNavbar2Label">
-        <div class="offcanvas-header">
-          <svg xmlns="http://www.w3.org/2000/svg" width="103" height="49" viewBox="0 0 103 49" fill="none">
-            <g clip-path="url(#clip0_379_7773)">
-              <path
-                d="M1.68619 47.8007C1.16736 47.4229 0.756622 46.9321 0.453973 46.3197C0.151324 45.7074 0 45.0472 0 44.3436C0 43.5445 0.19456 42.7888 0.58368 42.0852L20.4288 8.32626H4.53973C3.58855 8.32626 2.76707 7.94841 2.07531 7.19705C1.38354 6.4457 1.03765 5.55102 1.03765 4.51301C1.03765 3.47501 1.38354 2.52387 2.07531 1.79423C2.76707 1.06459 3.58855 0.699768 4.53973 0.699768H26.8493C27.6275 0.699768 28.3409 0.91258 28.9894 1.33386C29.5515 1.71171 29.9838 2.21551 30.2865 2.85395C30.5891 3.48804 30.7405 4.13516 30.7405 4.79532C30.7405 5.59445 30.5459 6.35015 30.1568 7.05373L10.3117 40.8083H27.1735C28.1679 40.8083 28.9981 41.1732 29.6725 41.9028C30.3427 42.6325 30.6756 43.5402 30.6756 44.6216C30.6756 45.703 30.3384 46.5543 29.6725 47.3056C29.0024 48.057 28.1679 48.4348 27.1735 48.4348H3.56693C2.9184 48.4348 2.29148 48.222 1.68619 47.8007Z"
-                fill="#387ADF" />
-              <path
-                d="M96.1256 2.41531C98.2442 3.69218 99.9217 5.45548 101.15 7.70521C102.382 9.95494 103 12.5 103 15.3404C103 18.1808 102.382 20.7258 101.15 22.9756C99.9174 25.2253 98.2399 26.9886 96.1256 28.2655C94.0071 29.5423 91.6724 30.1808 89.1215 30.1808H83.2198V44.3132C83.2198 45.4989 82.8394 46.4935 82.0871 47.297C81.3304 48.1004 80.4311 48.5043 79.3935 48.5043C78.3558 48.5043 77.4046 48.1048 76.6696 47.297C75.9346 46.4935 75.5671 45.4989 75.5671 44.3132V4.6911C75.5671 3.50977 75.9346 2.5152 76.6696 1.70738C77.4046 0.899566 78.3126 0.5 79.3935 0.5H89.1215C91.6724 0.5 94.0071 1.13844 96.1256 2.41531ZM93.5012 20.487C94.7334 19.1363 95.3517 17.4207 95.3517 15.3404C95.3517 13.26 94.7334 11.5402 93.5012 10.1938C92.269 8.84311 90.7428 8.16992 88.9269 8.16992H83.2198V22.5109H88.9269C90.7428 22.5109 92.269 21.8377 93.5012 20.487Z"
-                fill="#387ADF" />
-              <path
-                d="M39.5261 16.5956C41.6704 16.5956 43.4087 14.8494 43.4087 12.6955C43.4087 10.5415 41.6704 8.79535 39.5261 8.79535C37.3818 8.79535 35.6436 10.5415 35.6436 12.6955C35.6436 14.8494 37.3818 16.5956 39.5261 16.5956Z"
-                fill="#FBE74E" />
-              <path
-                d="M66.7817 16.5956C68.926 16.5956 70.6643 14.8494 70.6643 12.6955C70.6643 10.5415 68.926 8.79535 66.7817 8.79535C64.6375 8.79535 62.8992 10.5415 62.8992 12.6955C62.8992 14.8494 64.6375 16.5956 66.7817 16.5956Z"
-                fill="#FBE74E" />
-              <path
-                d="M67.253 24.7823H66.4142C66.4142 24.7823 66.3883 24.7823 66.371 24.7823C64.6805 24.9864 63.3229 26.3024 63.0159 27.9962C63.0159 28.0136 63.0116 28.0353 63.0116 28.0527V30.2937C63.0116 33.7248 62.082 36.4175 60.2229 38.3719C58.3638 40.3263 56.0074 41.3078 53.1539 41.3078C50.3003 41.3078 47.944 40.3306 46.0849 38.3719C44.2257 36.4175 43.2962 33.7248 43.2962 30.2937V28.0657C43.2962 28.0657 43.2962 28.0266 43.2918 28.0092C42.9892 26.3067 41.6316 24.9821 39.9324 24.778C39.9195 24.778 39.9065 24.778 39.8892 24.778H39.0504C39.0504 24.778 39.0245 24.778 39.0072 24.778C37.2994 24.9864 35.9375 26.3198 35.6435 28.0309C35.6435 28.0483 35.6392 28.07 35.6392 28.0874V30.2894C35.6392 34.1156 36.4174 37.3903 37.9739 40.1135C39.5304 42.8409 41.6273 44.9039 44.2646 46.3111C46.902 47.7182 49.8636 48.4218 53.1495 48.4218C56.4354 48.4218 59.3971 47.7182 62.0344 46.3111C64.6718 44.9039 66.7687 42.8366 68.3252 40.1135C69.8817 37.386 70.6599 34.1113 70.6599 30.2894V28.1004C70.6599 28.1004 70.6599 28.0657 70.6556 28.044C70.3703 26.3241 69.004 24.9821 67.2919 24.7736C67.2789 24.7736 67.2659 24.7736 67.2487 24.7736L67.253 24.7823Z"
-                fill="#F9A732" />
-            </g>
-            <defs>
-              <clipPath id="clip0_379_7773">
-                <rect width="103" height="48" fill="white" transform="translate(0 0.5)" />
-              </clipPath>
-            </defs>
-          </svg>
-          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
-            aria-label="Close"></button>
+      <div
+        class="multiply__end--white-1 position-absolute"
+        style="z-index: 124; top: 7em; left: 12em"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="32"
+          height="32"
+          viewBox="0 0 32 32"
+          fill="none"
+        >
+          <g clip-path="url(#clip0_509_680)">
+            <path
+              d="M28.49 12.55H19.33V3.39C19.33 1.52 17.81 0 15.94 0C14.07 0 12.55 1.52 12.55 3.39V12.55H3.39C1.52 12.55 0 14.07 0 15.94C0 17.81 1.52 19.33 3.39 19.33H12.55V28.5C12.55 30.37 14.07 31.89 15.94 31.89C17.81 31.89 19.33 30.37 19.33 28.5V19.33H28.49C30.36 19.33 31.88 17.81 31.88 15.94C31.88 14.07 30.36 12.55 28.49 12.55Z"
+              fill="white"
+            />
+          </g>
+          <defs>
+            <clipPath id="clip0_509_680">
+              <rect width="31.88" height="31.88" fill="white" />
+            </clipPath>
+          </defs>
+        </svg>
+      </div>
+      <div
+        class="multiply__end--white-2 position-absolute"
+        style="z-index: 125; bottom: 18em; right: 20em"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="32"
+          height="32"
+          viewBox="0 0 32 32"
+          fill="none"
+        >
+          <g clip-path="url(#clip0_509_680)">
+            <path
+              d="M28.49 12.55H19.33V3.39C19.33 1.52 17.81 0 15.94 0C14.07 0 12.55 1.52 12.55 3.39V12.55H3.39C1.52 12.55 0 14.07 0 15.94C0 17.81 1.52 19.33 3.39 19.33H12.55V28.5C12.55 30.37 14.07 31.89 15.94 31.89C17.81 31.89 19.33 30.37 19.33 28.5V19.33H28.49C30.36 19.33 31.88 17.81 31.88 15.94C31.88 14.07 30.36 12.55 28.49 12.55Z"
+              fill="white"
+            />
+          </g>
+          <defs>
+            <clipPath id="clip0_509_680">
+              <rect width="31.88" height="31.88" fill="white" />
+            </clipPath>
+          </defs>
+        </svg>
+      </div>
+      <div
+        class="dot__end--blue-1 position-absolute"
+        style="z-index: 126; bottom: 20em; right: 10em"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="41"
+          height="41"
+          viewBox="0 0 41 41"
+          fill="none"
+        >
+          <g clip-path="url(#clip0_509_713)">
+            <path
+              d="M20.14 40.28C31.263 40.28 40.28 31.263 40.28 20.14C40.28 9.01698 31.263 0 20.14 0C9.01698 0 0 9.01698 0 20.14C0 31.263 9.01698 40.28 20.14 40.28Z"
+              fill="url(#paint0_linear_509_713)"
+            />
+          </g>
+          <defs>
+            <linearGradient
+              id="paint0_linear_509_713"
+              x1="20.14"
+              y1="3.78"
+              x2="20.14"
+              y2="48.35"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop stop-color="#37CDF3" />
+              <stop offset="0.13" stop-color="#3EB8F4" />
+              <stop offset="0.37" stop-color="#4B97F6" />
+              <stop offset="0.6" stop-color="#5480F7" />
+              <stop offset="0.82" stop-color="#5A71F8" />
+              <stop offset="1" stop-color="#5C6DF9" />
+            </linearGradient>
+            <clipPath id="clip0_509_713">
+              <rect width="40.28" height="40.28" fill="white" />
+            </clipPath>
+          </defs>
+        </svg>
+      </div>
+      <div
+        class="dot__end--blue-2 position-absolute"
+        style="z-index: 127; top: -4em; left: 48em"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="41"
+          height="41"
+          viewBox="0 0 41 41"
+          fill="none"
+        >
+          <g clip-path="url(#clip0_509_713)">
+            <path
+              d="M20.14 40.28C31.263 40.28 40.28 31.263 40.28 20.14C40.28 9.01698 31.263 0 20.14 0C9.01698 0 0 9.01698 0 20.14C0 31.263 9.01698 40.28 20.14 40.28Z"
+              fill="url(#paint0_linear_509_713)"
+            />
+          </g>
+          <defs>
+            <linearGradient
+              id="paint0_linear_509_713"
+              x1="20.14"
+              y1="3.78"
+              x2="20.14"
+              y2="48.35"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop stop-color="#37CDF3" />
+              <stop offset="0.13" stop-color="#3EB8F4" />
+              <stop offset="0.37" stop-color="#4B97F6" />
+              <stop offset="0.6" stop-color="#5480F7" />
+              <stop offset="0.82" stop-color="#5A71F8" />
+              <stop offset="1" stop-color="#5C6DF9" />
+            </linearGradient>
+            <clipPath id="clip0_509_713">
+              <rect width="40.28" height="40.28" fill="white" />
+            </clipPath>
+          </defs>
+        </svg>
+      </div>
+      <div
+        class="dot__end--blue-3 position-absolute"
+        style="z-index: 128; top: 12em; left: 18em"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="41"
+          height="41"
+          viewBox="0 0 41 41"
+          fill="none"
+        >
+          <g clip-path="url(#clip0_509_713)">
+            <path
+              d="M20.14 40.28C31.263 40.28 40.28 31.263 40.28 20.14C40.28 9.01698 31.263 0 20.14 0C9.01698 0 0 9.01698 0 20.14C0 31.263 9.01698 40.28 20.14 40.28Z"
+              fill="url(#paint0_linear_509_713)"
+            />
+          </g>
+          <defs>
+            <linearGradient
+              id="paint0_linear_509_713"
+              x1="20.14"
+              y1="3.78"
+              x2="20.14"
+              y2="48.35"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop stop-color="#37CDF3" />
+              <stop offset="0.13" stop-color="#3EB8F4" />
+              <stop offset="0.37" stop-color="#4B97F6" />
+              <stop offset="0.6" stop-color="#5480F7" />
+              <stop offset="0.82" stop-color="#5A71F8" />
+              <stop offset="1" stop-color="#5C6DF9" />
+            </linearGradient>
+            <clipPath id="clip0_509_713">
+              <rect width="40.28" height="40.28" fill="white" />
+            </clipPath>
+          </defs>
+        </svg>
+      </div>
+      <div
+        class="dot__end--white-1 position-absolute"
+        style="z-index: 129; top: 20em; left: 12em"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="30"
+          height="30"
+          viewBox="0 0 30 30"
+          fill="none"
+        >
+          <g clip-path="url(#clip0_509_688)">
+            <path
+              d="M14.95 29.89C6.7 29.89 0 23.18 0 14.95C0 6.72 6.7 0 14.95 0C23.2 0 29.89 6.71 29.89 14.95C29.89 23.19 23.19 29.9 14.95 29.9V29.89ZM14.95 5.45C9.71 5.45 5.45 9.71 5.45 14.95C5.45 20.19 9.71 24.45 14.95 24.45C20.19 24.45 24.45 20.19 24.45 14.95C24.45 9.71 20.19 5.45 14.95 5.45Z"
+              fill="white"
+            />
+          </g>
+          <defs>
+            <clipPath id="clip0_509_688">
+              <rect width="29.89" height="29.89" fill="white" />
+            </clipPath>
+          </defs>
+        </svg>
+      </div>
+      <div
+        class="dot__end--white-4 position-absolute"
+        style="z-index: 130; top: 2em; left: 19em"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="30"
+          height="30"
+          viewBox="0 0 30 30"
+          fill="none"
+        >
+          <g clip-path="url(#clip0_509_688)">
+            <path
+              d="M14.95 29.89C6.7 29.89 0 23.18 0 14.95C0 6.72 6.7 0 14.95 0C23.2 0 29.89 6.71 29.89 14.95C29.89 23.19 23.19 29.9 14.95 29.9V29.89ZM14.95 5.45C9.71 5.45 5.45 9.71 5.45 14.95C5.45 20.19 9.71 24.45 14.95 24.45C20.19 24.45 24.45 20.19 24.45 14.95C24.45 9.71 20.19 5.45 14.95 5.45Z"
+              fill="white"
+            />
+          </g>
+          <defs>
+            <clipPath id="clip0_509_688">
+              <rect width="29.89" height="29.89" fill="white" />
+            </clipPath>
+          </defs>
+        </svg>
+      </div>
+      <div
+        class="dot__end--white-2 position-absolute"
+        style="z-index: 131; bottom: 34em; right: 16em"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="30"
+          height="30"
+          viewBox="0 0 30 30"
+          fill="none"
+        >
+          <g clip-path="url(#clip0_509_688)">
+            <path
+              d="M14.95 29.89C6.7 29.89 0 23.18 0 14.95C0 6.72 6.7 0 14.95 0C23.2 0 29.89 6.71 29.89 14.95C29.89 23.19 23.19 29.9 14.95 29.9V29.89ZM14.95 5.45C9.71 5.45 5.45 9.71 5.45 14.95C5.45 20.19 9.71 24.45 14.95 24.45C20.19 24.45 24.45 20.19 24.45 14.95C24.45 9.71 20.19 5.45 14.95 5.45Z"
+              fill="white"
+            />
+          </g>
+          <defs>
+            <clipPath id="clip0_509_688">
+              <rect width="29.89" height="29.89" fill="white" />
+            </clipPath>
+          </defs>
+        </svg>
+      </div>
+      <div
+        class="dot__end--white-3 position-absolute"
+        style="z-index: 131; bottom: 8em; right: 26em"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="30"
+          height="30"
+          viewBox="0 0 30 30"
+          fill="none"
+        >
+          <g clip-path="url(#clip0_509_688)">
+            <path
+              d="M14.95 29.89C6.7 29.89 0 23.18 0 14.95C0 6.72 6.7 0 14.95 0C23.2 0 29.89 6.71 29.89 14.95C29.89 23.19 23.19 29.9 14.95 29.9V29.89ZM14.95 5.45C9.71 5.45 5.45 9.71 5.45 14.95C5.45 20.19 9.71 24.45 14.95 24.45C20.19 24.45 24.45 20.19 24.45 14.95C24.45 9.71 20.19 5.45 14.95 5.45Z"
+              fill="white"
+            />
+          </g>
+          <defs>
+            <clipPath id="clip0_509_688">
+              <rect width="29.89" height="29.89" fill="white" />
+            </clipPath>
+          </defs>
+        </svg>
+      </div>
+    </div>
+    <!-- endPageEnd -->
+    <!-- contactWebsite -->
+    <div class="container--fluid container_noneList">
+      <div class="row col-12" style="padding-left: 143px; padding-right: 143px">
+        <div class="contactLinked col-3">
+          <ul>
+            <li>Liên kết</li>
+            <li class="pt-2">Trang chủ</li>
+            <li class="pt-1">Giới thiệu</li>
+            <li class="pt-1">Diễn đàn</li>
+          </ul>
         </div>
-        <div class="offcanvas-body">
-          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">Trang chủ</a>
+
+        <div class="contactSupport col-3">
+          <ul>
+            <li>Hỗ trợ</li>
+            <li class="pt-2">Điều khoản</li>
+            <li class="pt-1">Câu hỏi</li>
+            <li class="pt-1">Quyền riêng tư</li>
+            <li class="pt-1">Bảo mật</li>
+            <li class="pt-1">Khả năng tiếp cận</li>
+          </ul>
+        </div>
+
+        <div class="contactApp col-3">
+          <ul>
+            <li>Ứng dụng</li>
+            <li class="pt-2">Tải ứng dụng</li>
+            <li class="pt-1">Đánh giá</li>
+            <li class="pt-1">Trò chuyện trực tiếp</li>
+          </ul>
+        </div>
+
+        <div class="contactMe col-3">
+          <ul>
+            <li>Liên hệ</li>
+            <li class="pt-2">
+              <img
+                class="pe-2"
+                src="./image/mess/icon/vuesax/bold/vuesax/bold/vuesax/bold/messenger.svg"
+                alt=""
+              />
+              Zupwithyou@gmail.com
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Giới thiệu</a>
+            <li class="pt-1">
+              <img
+                class="pe-2"
+                src="./image/ringthephone/icon/vuesax/bold/icon/vuesax/bold/vuesax/bold/call-calling.svg"
+                alt=""
+              />0365200702
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Tính năng</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Liên hệ</a>
-            </li>
-            <li class="nav-item">
-              <ul class="nav--hidden d-flex align-items-center ">
-                <li class="logoStar">
-                  <div class="bg--logoStar">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
-                      <path
-                        d="M20 8.1781L12.3658 8.1895L9.99618 0.5L7.64414 8.1895L0 8.1781L6.19015 12.8592L3.79229 20.5L10.0008 15.7551L16.2222 20.5L13.819 12.8592L20 8.1781Z"
-                        fill="#F9CB38" />
-                    </svg>
-                  </div>
-                </li>
-                <li><a class="nav-link" href="#">Vie</a></li>
-                <li class="arrowDown"><svg width="24" height="25" viewBox="0 0 24 25" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <g id="vuesax/linear/arrow-down">
-                      <g id="arrow-down">
-                        <path id="Vector"
-                          d="M19.9201 9.45001L13.4001 15.97C12.6301 16.74 11.3701 16.74 10.6001 15.97L4.08008 9.45001"
-                          stroke="#387ADF" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
-                          stroke-linejoin="round" />
-                      </g>
-                    </g>
-                  </svg>
-                </li>
-              </ul>
+            <li class="pt-1">
+              <img
+                class="pe-2"
+                src="./image/location/icon/vuesax/bold/vuesax/bold/vuesax/bold/location.svg"
+                alt=""
+              />80 Trúc Khê, Đống Đa, Hà Nội
             </li>
           </ul>
         </div>
       </div>
     </div>
-  </nav>
-  <!-- endNavbar -->
-  <!-- startNewFeed -->
-  <div class="container--fluid">
-    <div class="row col-12 mt-5">
-      <!-- startContentNewFeed -->
-      <div class="container__content col-6 mt-5">
-        <h1 class="col-8">Chào mừng bạn đến với Zup</h1>
-        <p class="container__text--dark">Hãy để Zup chia sẻ câu chuyện với bạn</p>
-        <div class="d-flex gap-4">
-          <div class="frame__btn--1">
-            <button type="button" class="btn btn-primary mt-3"><span class="btn__text--1">Get
-                started</span> <img class="pb-2" src="./image/arrow-right.svg" alt=""></button>
-          </div>
-          <div class="frame__btn--2">
-            <button type="button" class="btn btn-light mt-3"><img class="pb-2" src="./image/video-circle.svg" alt="">
-              <span class="btn__text--2">Watch
-                video</span></button>
-          </div>
+
+    <div class="container--fluid container__ketthuc">
+      <div class="row col-12">
+        <div class="d-flex justify-content-center">
+          <h2 class="p-5">Thông báo</h2>
+          <h2 class="p-5">Theo dõi Zup</h2>
         </div>
-        <p class="container__textEX--blue">Trải nghiệm Zup với mình nhé</p>
-        <img class="img__androi" src="./image/androi.svg" alt="">
-        <img class="img__appstore" src="./image/appstore.svg" alt="">
-        <p class="container__textQr--blue">Hoặc quét mã QR</p>
-        <img class="img__qr" src="./image/QR.svg" alt="">
-      </div>
-      <!-- endContent -->
-      <!-- startImagesNewFeed -->
-      <div class="container__img--newFeed col-6 ps-5">
-        <div class="imgPhoneNewFeed">
-          <img src="./image/imgPhoneNewFeed1.svg" alt="">
-        </div>
-        <div class="bg__newFeed--gradient">
-          <svg xmlns="http://www.w3.org/2000/svg" width="778" height="778" viewBox="0 0 778 778" fill="none">
-            <g opacity="0.8" filter="url(#filter0_f_504_7125)">
-              <path
-                d="M585.415 569.489C485.716 677.984 316.942 685.114 208.447 585.415C99.9524 485.716 92.8221 316.942 192.521 208.447C292.22 99.9523 460.995 92.8221 569.489 192.521C677.984 292.22 685.114 460.995 585.415 569.489Z"
-                fill="url(#paint0_linear_504_7125)" />
-            </g>
-            <defs>
-              <filter id="filter0_f_504_7125" x="0.172119" y="0.172241" width="777.592" height="777.592"
-                filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
-                <feGaussianBlur stdDeviation="61" result="effect1_foregroundBlur_504_7125" />
-              </filter>
-              <linearGradient id="paint0_linear_504_7125" x1="606.352" y1="220.941" x2="245.309" y2="613.835"
-                gradientUnits="userSpaceOnUse">
-                <stop stop-color="#4E95FF" />
-                <stop offset="1" stop-color="#24DDD2" />
-              </linearGradient>
-            </defs>
-          </svg>
-        </div>
-        <div class="dot--white">
-          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
-            <g clip-path="url(#clip0_509_654)">
-              <path
-                d="M14.95 29.89C6.7 29.89 0 23.18 0 14.95C0 6.72 6.7 0 14.95 0C23.2 0 29.89 6.71 29.89 14.95C29.89 23.19 23.19 29.9 14.95 29.9V29.89ZM14.95 5.45C9.71 5.45 5.45 9.71 5.45 14.95C5.45 20.19 9.71 24.45 14.95 24.45C20.19 24.45 24.45 20.19 24.45 14.95C24.45 9.71 20.19 5.45 14.95 5.45Z"
-                fill="white" />
-            </g>
-            <defs>
-              <clipPath id="clip0_509_654">
-                <rect width="29.89" height="29.89" fill="white" />
-              </clipPath>
-            </defs>
-          </svg>
-        </div>
-        <div class="dot--blue">
-          <svg xmlns="http://www.w3.org/2000/svg" width="41" height="41" viewBox="0 0 41 41" fill="none">
-            <g clip-path="url(#clip0_509_640)">
-              <path
-                d="M20.14 40.28C31.263 40.28 40.28 31.263 40.28 20.14C40.28 9.01698 31.263 0 20.14 0C9.01698 0 0 9.01698 0 20.14C0 31.263 9.01698 40.28 20.14 40.28Z"
-                fill="url(#paint0_linear_509_640)" />
-            </g>
-            <defs>
-              <linearGradient id="paint0_linear_509_640" x1="20.14" y1="3.78" x2="20.14" y2="48.35"
-                gradientUnits="userSpaceOnUse">
-                <stop stop-color="#37CDF3" />
-                <stop offset="0.13" stop-color="#3EB8F4" />
-                <stop offset="0.37" stop-color="#4B97F6" />
-                <stop offset="0.6" stop-color="#5480F7" />
-                <stop offset="0.82" stop-color="#5A71F8" />
-                <stop offset="1" stop-color="#5C6DF9" />
-              </linearGradient>
-              <clipPath id="clip0_509_640">
-                <rect width="40.28" height="40.28" fill="white" />
-              </clipPath>
-            </defs>
-          </svg>
-        </div>
-        <div class="dot--blue--reverse">
-          <svg xmlns="http://www.w3.org/2000/svg" width="41" height="41" viewBox="0 0 41 41" fill="none">
-            <g clip-path="url(#clip0_509_648)">
-              <path
-                d="M20.14 40.28C31.263 40.28 40.28 31.263 40.28 20.14C40.28 9.01698 31.263 0 20.14 0C9.01698 0 0 9.01698 0 20.14C0 31.263 9.01698 40.28 20.14 40.28Z"
-                fill="url(#paint0_linear_509_648)" fill-opacity="0.7" />
-            </g>
-            <defs>
-              <linearGradient id="paint0_linear_509_648" x1="20.14" y1="3.78" x2="20.14" y2="48.35"
-                gradientUnits="userSpaceOnUse">
-                <stop stop-color="#37CDF3" />
-                <stop offset="0.13" stop-color="#3EB8F4" />
-                <stop offset="0.37" stop-color="#4B97F6" />
-                <stop offset="0.6" stop-color="#5480F7" />
-                <stop offset="0.82" stop-color="#5A71F8" />
-                <stop offset="1" stop-color="#5C6DF9" />
-              </linearGradient>
-              <clipPath id="clip0_509_648">
-                <rect width="40.28" height="40.28" fill="white" />
-              </clipPath>
-            </defs>
-          </svg>
-        </div>
-        <div class="dot__multiply--blue">
-          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-            <g clip-path="url(#clip0_509_644)">
-              <path
-                d="M28.49 12.55H19.33V3.39C19.33 1.52 17.81 0 15.94 0C14.07 0 12.55 1.52 12.55 3.39V12.55H3.39C1.52 12.55 0 14.07 0 15.94C0 17.81 1.52 19.33 3.39 19.33H12.55V28.5C12.55 30.37 14.07 31.89 15.94 31.89C17.81 31.89 19.33 30.37 19.33 28.5V19.33H28.49C30.36 19.33 31.88 17.81 31.88 15.94C31.88 14.07 30.36 12.55 28.49 12.55Z"
-                fill="#387ADF" />
-            </g>
-            <defs>
-              <clipPath id="clip0_509_644">
-                <rect width="31.88" height="31.88" fill="white" />
-              </clipPath>
-            </defs>
-          </svg>
-        </div>
-        <div class="dot__multiply--white">
-          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-            <g clip-path="url(#clip0_509_642)">
-              <path
-                d="M28.49 12.55H19.33V3.39C19.33 1.52 17.81 0 15.94 0C14.07 0 12.55 1.52 12.55 3.39V12.55H3.39C1.52 12.55 0 14.07 0 15.94C0 17.81 1.52 19.33 3.39 19.33H12.55V28.5C12.55 30.37 14.07 31.89 15.94 31.89C17.81 31.89 19.33 30.37 19.33 28.5V19.33H28.49C30.36 19.33 31.88 17.81 31.88 15.94C31.88 14.07 30.36 12.55 28.49 12.55Z"
-                fill="white" />
-            </g>
-            <defs>
-              <clipPath id="clip0_509_642">
-                <rect width="31.88" height="31.88" fill="white" />
-              </clipPath>
-            </defs>
-          </svg>
-        </div>
-        <div class="dot__multiply--greenFade">
-          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-            <g clip-path="url(#clip0_509_646)">
-              <path
-                d="M28.49 12.55H19.33V3.39C19.33 1.52 17.81 0 15.94 0C14.07 0 12.55 1.52 12.55 3.39V12.55H3.39C1.52 12.55 0 14.07 0 15.94C0 17.81 1.52 19.33 3.39 19.33H12.55V28.5C12.55 30.37 14.07 31.89 15.94 31.89C17.81 31.89 19.33 30.37 19.33 28.5V19.33H28.49C30.36 19.33 31.88 17.81 31.88 15.94C31.88 14.07 30.36 12.55 28.49 12.55Z"
-                fill="#50C4ED" />
-            </g>
-            <defs>
-              <clipPath id="clip0_509_646">
-                <rect width="31.88" height="31.88" fill="white" />
-              </clipPath>
-            </defs>
-          </svg>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- endNewFeed -->
-  <!-- startPageIntroduce -->
-  <div class="container--fluid pageIntroduce">
-    <div class="row col-12">
-      <!-- strartImageIntroduce -->
-      <div class="frame__imgIntroduce col-6 position-relative">
-        <div class="imgPhoneIntroduce">
-          <img src="./image/imgPhoneIntroduce.svg" alt="" srcset="">
-        </div>
-        <div class="bg__imgIntroduce">
-          <svg xmlns="http://www.w3.org/2000/svg" width="750" height="778" viewBox="0 0 750 778" fill="none">
-            <g opacity="0.8" filter="url(#filter0_f_379_6354)">
-              <path
-                d="M557.415 569.489C457.716 677.984 288.942 685.114 180.447 585.415C71.9524 485.716 64.8221 316.942 164.521 208.447C264.22 99.9523 432.995 92.8221 541.489 192.521C649.984 292.22 657.114 460.995 557.415 569.489Z"
-                fill="url(#paint0_linear_379_6354)" />
-            </g>
-            <defs>
-              <filter id="filter0_f_379_6354" x="-27.8279" y="0.172119" width="777.592" height="777.592"
-                filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
-                <feGaussianBlur stdDeviation="61" result="effect1_foregroundBlur_379_6354" />
-              </filter>
-              <linearGradient id="paint0_linear_379_6354" x1="578.352" y1="220.941" x2="217.309" y2="613.835"
-                gradientUnits="userSpaceOnUse">
-                <stop stop-color="#4E95FF" />
-                <stop offset="1" stop-color="#24DDD2" />
-              </linearGradient>
-            </defs>
-          </svg>
-        </div>
-        <div class="dot__introduce--blueReverse">
-          <svg xmlns="http://www.w3.org/2000/svg" width="41" height="41" viewBox="0 0 41 41" fill="none">
-            <g clip-path="url(#clip0_509_656)">
-              <path
-                d="M20.14 40.28C31.263 40.28 40.28 31.263 40.28 20.14C40.28 9.01698 31.263 0 20.14 0C9.01698 0 0 9.01698 0 20.14C0 31.263 9.01698 40.28 20.14 40.28Z"
-                fill="url(#paint0_linear_509_656)" fill-opacity="0.7" />
-            </g>
-            <defs>
-              <linearGradient id="paint0_linear_509_656" x1="20.14" y1="3.78" x2="20.14" y2="48.35"
-                gradientUnits="userSpaceOnUse">
-                <stop stop-color="#37CDF3" />
-                <stop offset="0.13" stop-color="#3EB8F4" />
-                <stop offset="0.37" stop-color="#4B97F6" />
-                <stop offset="0.6" stop-color="#5480F7" />
-                <stop offset="0.82" stop-color="#5A71F8" />
-                <stop offset="1" stop-color="#5C6DF9" />
-              </linearGradient>
-              <clipPath id="clip0_509_656">
-                <rect width="40.28" height="40.28" fill="white" />
-              </clipPath>
-            </defs>
-          </svg>
-        </div>
-        <div class="dot__introduce--blue">
-          <svg xmlns="http://www.w3.org/2000/svg" width="41" height="41" viewBox="0 0 41 41" fill="none">
-            <g clip-path="url(#clip0_509_666)">
-              <path
-                d="M20.14 40.28C31.263 40.28 40.28 31.263 40.28 20.14C40.28 9.01698 31.263 0 20.14 0C9.01698 0 0 9.01698 0 20.14C0 31.263 9.01698 40.28 20.14 40.28Z"
-                fill="url(#paint0_linear_509_666)" />
-            </g>
-            <defs>
-              <linearGradient id="paint0_linear_509_666" x1="20.14" y1="3.78" x2="20.14" y2="48.35"
-                gradientUnits="userSpaceOnUse">
-                <stop stop-color="#37CDF3" />
-                <stop offset="0.13" stop-color="#3EB8F4" />
-                <stop offset="0.37" stop-color="#4B97F6" />
-                <stop offset="0.6" stop-color="#5480F7" />
-                <stop offset="0.82" stop-color="#5A71F8" />
-                <stop offset="1" stop-color="#5C6DF9" />
-              </linearGradient>
-              <clipPath id="clip0_509_666">
-                <rect width="40.28" height="40.28" fill="white" />
-              </clipPath>
-            </defs>
-          </svg>
-        </div>
-        <div class="multiply__introduce--blue">
-          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-            <g clip-path="url(#clip0_509_662)">
-              <path
-                d="M28.49 12.55H19.33V3.39C19.33 1.52 17.81 0 15.94 0C14.07 0 12.55 1.52 12.55 3.39V12.55H3.39C1.52 12.55 0 14.07 0 15.94C0 17.81 1.52 19.33 3.39 19.33H12.55V28.5C12.55 30.37 14.07 31.89 15.94 31.89C17.81 31.89 19.33 30.37 19.33 28.5V19.33H28.49C30.36 19.33 31.88 17.81 31.88 15.94C31.88 14.07 30.36 12.55 28.49 12.55Z"
-                fill="#387ADF" />
-            </g>
-            <defs>
-              <clipPath id="clip0_509_662">
-                <rect width="31.88" height="31.88" fill="white" />
-              </clipPath>
-            </defs>
-          </svg>
-        </div>
-        <div class="multiply__introduce--blueReverse">
-          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-            <g clip-path="url(#clip0_509_660)">
-              <path
-                d="M28.49 12.55H19.33V3.39C19.33 1.52 17.81 0 15.94 0C14.07 0 12.55 1.52 12.55 3.39V12.55H3.39C1.52 12.55 0 14.07 0 15.94C0 17.81 1.52 19.33 3.39 19.33H12.55V28.5C12.55 30.37 14.07 31.89 15.94 31.89C17.81 31.89 19.33 30.37 19.33 28.5V19.33H28.49C30.36 19.33 31.88 17.81 31.88 15.94C31.88 14.07 30.36 12.55 28.49 12.55Z"
-                fill="#50C4ED" />
-            </g>
-            <defs>
-              <clipPath id="clip0_509_660">
-                <rect width="31.88" height="31.88" fill="white" />
-              </clipPath>
-            </defs>
-          </svg>
-        </div>
-        <div class="multiply__white--1">
-          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-            <g clip-path="url(#clip0_509_664)">
-              <path
-                d="M28.49 12.55H19.33V3.39C19.33 1.52 17.81 0 15.94 0C14.07 0 12.55 1.52 12.55 3.39V12.55H3.39C1.52 12.55 0 14.07 0 15.94C0 17.81 1.52 19.33 3.39 19.33H12.55V28.5C12.55 30.37 14.07 31.89 15.94 31.89C17.81 31.89 19.33 30.37 19.33 28.5V19.33H28.49C30.36 19.33 31.88 17.81 31.88 15.94C31.88 14.07 30.36 12.55 28.49 12.55Z"
-                fill="white" />
-            </g>
-            <defs>
-              <clipPath id="clip0_509_664">
-                <rect width="31.88" height="31.88" fill="white" />
-              </clipPath>
-            </defs>
-          </svg>
-        </div>
-        <div class="multiply__white--2">
-          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-            <g clip-path="url(#clip0_509_668)">
-              <path
-                d="M28.49 12.55H19.33V3.39C19.33 1.52 17.81 0 15.94 0C14.07 0 12.55 1.52 12.55 3.39V12.55H3.39C1.52 12.55 0 14.07 0 15.94C0 17.81 1.52 19.33 3.39 19.33H12.55V28.5C12.55 30.37 14.07 31.89 15.94 31.89C17.81 31.89 19.33 30.37 19.33 28.5V19.33H28.49C30.36 19.33 31.88 17.81 31.88 15.94C31.88 14.07 30.36 12.55 28.49 12.55Z"
-                fill="white" />
-            </g>
-            <defs>
-              <clipPath id="clip0_509_668">
-                <rect width="31.88" height="31.88" fill="white" />
-              </clipPath>
-            </defs>
-          </svg>
-        </div>
-      </div>
-      <!-- endImageIntroduce -->
-      <!-- startContentIntroduce -->
-      <div class="frame__contentIntroduce col-6 ">
-        <div class="" style="padding-top: 184px;">
-          <h1>Giới thiệu Zup</h1>
-          <p style="padding-top: 16px;">Zup là ứng dụng mạng xã hội trò chuyện kết bạn.</p>
-          <p class="col-7 ps-5" style="padding-top: 44px;">Ứng dụng trò chuyện kết bạn ẩn danh</p>
-          <p class="col-7 ps-5" style="padding-top: 24px;">Giúp bạn chia sẻ câu chuyện của mình để giải tỏa tâm trạng
+        <div class="d-flex justify-content-center gap-5">
+          <p
+            style="
+              color: var(--neutral-04, #777);
+              font-family: Nunito;
+              font-size: 18px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 27px;
+            "
+          >
+            Đăng kí để nhận ngay thông báo
           </p>
-          <p class="col-7 ps-5" style="padding-top: 24px;">Giúp bạn trau dồi khả năng ngoại ngữ với bạn bè khắp nơi trên
-            thế giới</p>
+          <div class="imgTwiter">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 32 32"
+              fill="none"
+            >
+              <g clip-path="url(#clip0_484_7016)">
+                <path
+                  d="M24.5 0H7.5C3.35786 0 0 3.35786 0 7.5V24.5C0 28.6421 3.35786 32 7.5 32H24.5C28.6421 32 32 28.6421 32 24.5V7.5C32 3.35786 28.6421 0 24.5 0Z"
+                  fill="white"
+                />
+                <path
+                  d="M24.5 0H7.5C3.35786 0 0 3.35786 0 7.5V24.5C0 28.6421 3.35786 32 7.5 32H24.5C28.6421 32 32 28.6421 32 24.5V7.5C32 3.35786 28.6421 0 24.5 0Z"
+                  fill="#1D9BF0"
+                />
+                <path
+                  d="M24.9465 11.4264C24.9603 11.6247 24.9603 11.8231 24.9603 12.0234C24.9603 18.123 20.3168 25.1577 11.8259 25.1577V25.154C9.31752 25.1576 6.86113 24.4392 4.75 23.0846C5.11475 23.1285 5.48125 23.1504 5.84875 23.1512C7.92771 23.1529 9.94685 22.4556 11.5817 21.1714C10.6185 21.1532 9.68501 20.8344 8.9118 20.2596C8.13859 19.6849 7.56431 18.8829 7.26925 17.9657C7.96085 18.0991 8.67382 18.0719 9.35325 17.8862C7.19975 17.4511 5.65037 15.559 5.65037 13.3615V13.303C6.29236 13.6606 7.01085 13.8587 7.74538 13.8807C5.71713 12.5251 5.09188 9.82674 6.31663 7.71699C7.47554 9.14312 8.92149 10.3095 10.5606 11.1404C12.1996 11.9712 13.9952 12.448 15.8305 12.5397C15.6475 11.752 15.6745 10.9301 15.9089 10.1561C16.1432 9.38215 16.5767 8.68327 17.1659 8.12937C19.0251 6.38162 21.9493 6.47124 23.697 8.32949C24.7308 8.1254 25.7221 7.74642 26.6284 7.20887C26.2838 8.2777 25.5626 9.18496 24.5991 9.76187C25.5142 9.65406 26.4078 9.40911 27.25 9.03524C26.6305 9.96299 25.8505 10.7726 24.9465 11.4264Z"
+                  fill="white"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_484_7016">
+                  <rect width="32" height="32" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </div>
+          <div class="imgInsta">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 32 32"
+              fill="none"
+            >
+              <g clip-path="url(#clip0_484_7009)">
+                <path
+                  d="M24.5 0H7.5C3.35786 0 0 3.35786 0 7.5V24.5C0 28.6421 3.35786 32 7.5 32H24.5C28.6421 32 32 28.6421 32 24.5V7.5C32 3.35786 28.6421 0 24.5 0Z"
+                  fill="url(#paint0_radial_484_7009)"
+                />
+                <path
+                  d="M24.5 0H7.5C3.35786 0 0 3.35786 0 7.5V24.5C0 28.6421 3.35786 32 7.5 32H24.5C28.6421 32 32 28.6421 32 24.5V7.5C32 3.35786 28.6421 0 24.5 0Z"
+                  fill="url(#paint1_radial_484_7009)"
+                />
+                <path
+                  d="M16.0011 3.5C12.6064 3.5 12.1803 3.51488 10.847 3.5755C9.51625 3.6365 8.60787 3.84712 7.81313 4.15625C6.99088 4.4755 6.2935 4.90262 5.59875 5.59762C4.90338 6.2925 4.47625 6.98987 4.156 7.81175C3.846 8.60675 3.63512 9.5155 3.57525 10.8456C3.51562 12.179 3.5 12.6053 3.5 16.0001C3.5 19.395 3.515 19.8197 3.5755 21.153C3.63675 22.4837 3.84738 23.3921 4.15625 24.1869C4.47575 25.0091 4.90288 25.7065 5.59788 26.4013C6.2925 27.0966 6.98988 27.5247 7.8115 27.844C8.60687 28.1531 9.51537 28.3637 10.8459 28.4247C12.1792 28.4854 12.605 28.5002 15.9996 28.5002C19.3948 28.5002 19.8195 28.4854 21.1528 28.4247C22.4835 28.3637 23.3929 28.1531 24.1882 27.844C25.0101 27.5247 25.7065 27.0966 26.401 26.4013C27.0964 25.7065 27.5234 25.0091 27.8438 24.1873C28.151 23.3921 28.362 22.4835 28.4245 21.1532C28.4844 19.82 28.5 19.395 28.5 16.0001C28.5 12.6053 28.4844 12.1792 28.4245 10.8459C28.362 9.51512 28.151 8.60688 27.8438 7.81213C27.5234 6.98988 27.0964 6.2925 26.401 5.59762C25.7057 4.90237 25.0104 4.47525 24.1875 4.15637C23.3906 3.84712 22.4817 3.63638 21.151 3.5755C19.8176 3.51488 19.3931 3.5 15.9972 3.5H16.0011ZM14.8798 5.75262C15.2126 5.75213 15.584 5.75262 16.0011 5.75262C19.3388 5.75262 19.7342 5.76463 21.0522 5.8245C22.271 5.88025 22.9325 6.08388 23.3731 6.255C23.9565 6.4815 24.3724 6.75238 24.8096 7.19C25.2471 7.6275 25.5179 8.04412 25.745 8.6275C25.9161 9.0675 26.12 9.729 26.1755 10.9478C26.2354 12.2655 26.2484 12.6612 26.2484 15.9972C26.2484 19.3333 26.2354 19.7291 26.1755 21.0467C26.1198 22.2655 25.9161 22.927 25.745 23.3671C25.5185 23.9505 25.2471 24.3659 24.8096 24.8031C24.3721 25.2406 23.9568 25.5114 23.3731 25.738C22.933 25.9099 22.271 26.113 21.0522 26.1688C19.7345 26.2286 19.3388 26.2416 16.0011 26.2416C12.6634 26.2416 12.2677 26.2286 10.9501 26.1688C9.73137 26.1125 9.06987 25.9089 8.62887 25.7377C8.04562 25.5111 7.62887 25.2404 7.19137 24.8029C6.75387 24.3654 6.48312 23.9498 6.256 23.3661C6.08488 22.926 5.881 22.2645 5.8255 21.0457C5.76562 19.728 5.75362 19.3323 5.75362 15.9941C5.75362 12.6561 5.76562 12.2624 5.8255 10.9446C5.88125 9.72587 6.08488 9.06437 6.256 8.62375C6.48263 8.04037 6.75388 7.62375 7.1915 7.18625C7.629 6.74875 8.04562 6.47787 8.629 6.25087C9.06962 6.079 9.73137 5.87587 10.9501 5.81987C12.1032 5.76775 12.5501 5.75212 14.8798 5.7495V5.75262ZM22.6736 7.82812C21.8455 7.82812 21.1736 8.49938 21.1736 9.32763C21.1736 10.1558 21.8455 10.8276 22.6736 10.8276C23.5018 10.8276 24.1736 10.1558 24.1736 9.32763C24.1736 8.4995 23.5018 7.82762 22.6736 7.82762V7.82812ZM16.0011 9.58075C12.4561 9.58075 9.58187 12.455 9.58187 16.0001C9.58187 19.5452 12.4561 22.4181 16.0011 22.4181C19.5462 22.4181 22.4195 19.5452 22.4195 16.0001C22.4195 12.4551 19.546 9.58075 16.0009 9.58075H16.0011ZM16.0011 11.8334C18.3022 11.8334 20.1679 13.6988 20.1679 16.0001C20.1679 18.3013 18.3022 20.1669 16.0011 20.1669C13.6999 20.1669 11.8345 18.3013 11.8345 16.0001C11.8345 13.6988 13.6999 11.8334 16.0011 11.8334Z"
+                  fill="white"
+                />
+              </g>
+              <defs>
+                <radialGradient
+                  id="paint0_radial_484_7009"
+                  cx="0"
+                  cy="0"
+                  r="1"
+                  gradientUnits="userSpaceOnUse"
+                  gradientTransform="translate(8.5 34.4646) rotate(-90) scale(31.7144 29.4969)"
+                >
+                  <stop stop-color="#FFDD55" />
+                  <stop offset="0.1" stop-color="#FFDD55" />
+                  <stop offset="0.5" stop-color="#FF543E" />
+                  <stop offset="1" stop-color="#C837AB" />
+                </radialGradient>
+                <radialGradient
+                  id="paint1_radial_484_7009"
+                  cx="0"
+                  cy="0"
+                  r="1"
+                  gradientUnits="userSpaceOnUse"
+                  gradientTransform="translate(-5.36012 2.30512) rotate(78.681) scale(14.1765 58.436)"
+                >
+                  <stop stop-color="#3771C8" />
+                  <stop offset="0.128" stop-color="#3771C8" />
+                  <stop offset="1" stop-color="#6600FF" stop-opacity="0" />
+                </radialGradient>
+                <clipPath id="clip0_484_7009">
+                  <rect width="32" height="32" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </div>
+          <div class="imgFB">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 32 32"
+              fill="none"
+            >
+              <g clip-path="url(#clip0_484_7014)">
+                <path
+                  d="M5.84301 0C2.60624 0 0 2.60624 0 5.84301V26.157C0 29.3938 2.60624 32 5.84301 32H16.853V19.49H13.545V14.986H16.853V11.138C16.853 8.11482 18.8076 5.33901 23.31 5.33901C25.133 5.33901 26.481 5.51402 26.481 5.51402L26.375 9.72003C26.375 9.72003 25.0002 9.70704 23.5 9.70704C21.8764 9.70704 21.616 10.4551 21.616 11.6971V14.986H26.504L26.291 19.49H21.616V32.0001H26.157C29.3938 32.0001 32 29.3938 32 26.1571V5.84304C32 2.60627 29.3938 3.2e-05 26.157 3.2e-05H5.84298L5.84301 0Z"
+                  fill="#1877F2"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_484_7014">
+                  <rect width="32" height="32" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </div>
         </div>
-      </div>
-      <!-- endContentIntroduce -->
-    </div>
-  </div>
-  <!-- endPageIntroduce -->
-  <!-- startPageFeature -->
-  <div class="container--fluid container__feature--margin">
-    <div class="row col-12">
-      <div class="frame__contentFeature col-6">
-        <h1>Tính năng</h1>
-        <p class="col-7 pt-4">Zup sẽ mang lại cho bạn các tính năng để bạn thoải mái chia sẻ câu chuyện của mình.</p>
-        <p class="pt-4"><img class="pe-4" src="./image/contactFeature.svg" alt="">Kết nối tự động</p>
-        <p class="pt-4"><img class="pe-4" src="./image/userFeature.svg" alt="">Trò chuyện theo cộng đồng</p>
-        <p class="pt-4"><img class="pe-4" src="./image/personalFeature.svg" alt="">Tự tạo avatar cho bản thân</p>
-        <p class="pt-4"><img class="pe-4" src="./image/phoneFeature.svg" alt="">Gợi ý trò chuyện</p>
-      </div>
-      <!-- ******************************** -->
-      <div class="frame__imgFeature col-6 position-relative ">
-        <div class="imgPhoneFeature ">
-          <img src="./image/imgPhoneFeature.svg" alt="">
-        </div>
-        <div class="bg__feature">
-          <svg xmlns="http://www.w3.org/2000/svg" width="671" height="745" viewBox="0 0 671 745" fill="none">
-            <g opacity="0.8" filter="url(#filter0_f_504_7126)">
-              <path
-                d="M388.968 622.763C241.622 622.763 122.174 503.315 122.174 355.968C122.174 208.622 241.622 89.1736 388.968 89.1736C536.315 89.1736 655.763 208.622 655.763 355.968C655.763 503.315 536.315 622.763 388.968 622.763Z"
-                fill="url(#paint0_linear_504_7126)" />
-            </g>
-            <defs>
-              <filter id="filter0_f_504_7126" x="0.173584" y="-32.8264" width="777.589" height="777.589"
-                filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
-                <feGaussianBlur stdDeviation="61" result="effect1_foregroundBlur_504_7126" />
-              </filter>
-              <linearGradient id="paint0_linear_504_7126" x1="659.778" y1="402.34" x2="126.189" y2="402.34"
-                gradientUnits="userSpaceOnUse">
-                <stop stop-color="#4E95FF" />
-                <stop offset="1" stop-color="#24DDD2" />
-              </linearGradient>
-            </defs>
-          </svg>
-        </div>
-        <div class="dot__feature--blue-1">
-          <svg xmlns="http://www.w3.org/2000/svg" width="41" height="41" viewBox="0 0 41 41" fill="none">
-            <g clip-path="url(#clip0_509_684)">
-              <path
-                d="M20.14 40.28C31.263 40.28 40.28 31.263 40.28 20.14C40.28 9.01698 31.263 0 20.14 0C9.01698 0 0 9.01698 0 20.14C0 31.263 9.01698 40.28 20.14 40.28Z"
-                fill="url(#paint0_linear_509_684)" />
-            </g>
-            <defs>
-              <linearGradient id="paint0_linear_509_684" x1="20.14" y1="3.78" x2="20.14" y2="48.35"
-                gradientUnits="userSpaceOnUse">
-                <stop stop-color="#37CDF3" />
-                <stop offset="0.13" stop-color="#3EB8F4" />
-                <stop offset="0.37" stop-color="#4B97F6" />
-                <stop offset="0.6" stop-color="#5480F7" />
-                <stop offset="0.82" stop-color="#5A71F8" />
-                <stop offset="1" stop-color="#5C6DF9" />
-              </linearGradient>
-              <clipPath id="clip0_509_684">
-                <rect width="40.28" height="40.28" fill="white" />
-              </clipPath>
-            </defs>
-          </svg>
-        </div>
-        <div class="dot__feature--blue-2">
-          <svg xmlns="http://www.w3.org/2000/svg" width="41" height="41" viewBox="0 0 41 41" fill="none">
-            <g clip-path="url(#clip0_509_686)">
-              <path
-                d="M20.14 40.28C31.263 40.28 40.28 31.263 40.28 20.14C40.28 9.01698 31.263 0 20.14 0C9.01698 0 0 9.01698 0 20.14C0 31.263 9.01698 40.28 20.14 40.28Z"
-                fill="url(#paint0_linear_509_686)" />
-            </g>
-            <defs>
-              <linearGradient id="paint0_linear_509_686" x1="20.14" y1="3.78" x2="20.14" y2="48.35"
-                gradientUnits="userSpaceOnUse">
-                <stop stop-color="#37CDF3" />
-                <stop offset="0.13" stop-color="#3EB8F4" />
-                <stop offset="0.37" stop-color="#4B97F6" />
-                <stop offset="0.6" stop-color="#5480F7" />
-                <stop offset="0.82" stop-color="#5A71F8" />
-                <stop offset="1" stop-color="#5C6DF9" />
-              </linearGradient>
-              <clipPath id="clip0_509_686">
-                <rect width="40.28" height="40.28" fill="white" />
-              </clipPath>
-            </defs>
-          </svg>
-        </div>
-        <div class="dot__feature--blue-3">
-          <svg xmlns="http://www.w3.org/2000/svg" width="41" height="41" viewBox="0 0 41 41" fill="none">
-            <g clip-path="url(#clip0_509_674)">
-              <path
-                d="M20.14 40.28C31.263 40.28 40.28 31.263 40.28 20.14C40.28 9.01698 31.263 0 20.14 0C9.01698 0 0 9.01698 0 20.14C0 31.263 9.01698 40.28 20.14 40.28Z"
-                fill="url(#paint0_linear_509_674)" />
-            </g>
-            <defs>
-              <linearGradient id="paint0_linear_509_674" x1="20.14" y1="3.78" x2="20.14" y2="48.35"
-                gradientUnits="userSpaceOnUse">
-                <stop stop-color="#37CDF3" />
-                <stop offset="0.13" stop-color="#3EB8F4" />
-                <stop offset="0.37" stop-color="#4B97F6" />
-                <stop offset="0.6" stop-color="#5480F7" />
-                <stop offset="0.82" stop-color="#5A71F8" />
-                <stop offset="1" stop-color="#5C6DF9" />
-              </linearGradient>
-              <clipPath id="clip0_509_674">
-                <rect width="40.28" height="40.28" fill="white" />
-              </clipPath>
-            </defs>
-          </svg>
-        </div>
-        <div class="dot__feature--white-1">
-          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
-            <g clip-path="url(#clip0_509_688)">
-              <path
-                d="M14.95 29.89C6.7 29.89 0 23.18 0 14.95C0 6.72 6.7 0 14.95 0C23.2 0 29.89 6.71 29.89 14.95C29.89 23.19 23.19 29.9 14.95 29.9V29.89ZM14.95 5.45C9.71 5.45 5.45 9.71 5.45 14.95C5.45 20.19 9.71 24.45 14.95 24.45C20.19 24.45 24.45 20.19 24.45 14.95C24.45 9.71 20.19 5.45 14.95 5.45Z"
-                fill="white" />
-            </g>
-            <defs>
-              <clipPath id="clip0_509_688">
-                <rect width="29.89" height="29.89" fill="white" />
-              </clipPath>
-            </defs>
-          </svg>
-        </div>
-        <div class="dot__feature--white-2">
-          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
-            <g clip-path="url(#clip0_509_688)">
-              <path
-                d="M14.95 29.89C6.7 29.89 0 23.18 0 14.95C0 6.72 6.7 0 14.95 0C23.2 0 29.89 6.71 29.89 14.95C29.89 23.19 23.19 29.9 14.95 29.9V29.89ZM14.95 5.45C9.71 5.45 5.45 9.71 5.45 14.95C5.45 20.19 9.71 24.45 14.95 24.45C20.19 24.45 24.45 20.19 24.45 14.95C24.45 9.71 20.19 5.45 14.95 5.45Z"
-                fill="white" />
-            </g>
-            <defs>
-              <clipPath id="clip0_509_688">
-                <rect width="29.89" height="29.89" fill="white" />
-              </clipPath>
-            </defs>
-          </svg>
-        </div>
-        <div class="multiply__feature--white">
-          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-            <g clip-path="url(#clip0_509_680)">
-              <path
-                d="M28.49 12.55H19.33V3.39C19.33 1.52 17.81 0 15.94 0C14.07 0 12.55 1.52 12.55 3.39V12.55H3.39C1.52 12.55 0 14.07 0 15.94C0 17.81 1.52 19.33 3.39 19.33H12.55V28.5C12.55 30.37 14.07 31.89 15.94 31.89C17.81 31.89 19.33 30.37 19.33 28.5V19.33H28.49C30.36 19.33 31.88 17.81 31.88 15.94C31.88 14.07 30.36 12.55 28.49 12.55Z"
-                fill="white" />
-            </g>
-            <defs>
-              <clipPath id="clip0_509_680">
-                <rect width="31.88" height="31.88" fill="white" />
-              </clipPath>
-            </defs>
-          </svg>
-        </div>
-        <div class="multiply__feature--blueReverse">
-          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-            <g clip-path="url(#clip0_509_676)">
-              <path
-                d="M28.49 12.55H19.33V3.39C19.33 1.52 17.81 0 15.94 0C14.07 0 12.55 1.52 12.55 3.39V12.55H3.39C1.52 12.55 0 14.07 0 15.94C0 17.81 1.52 19.33 3.39 19.33H12.55V28.5C12.55 30.37 14.07 31.89 15.94 31.89C17.81 31.89 19.33 30.37 19.33 28.5V19.33H28.49C30.36 19.33 31.88 17.81 31.88 15.94C31.88 14.07 30.36 12.55 28.49 12.55Z"
-                fill="#50C4ED" />
-            </g>
-            <defs>
-              <clipPath id="clip0_509_676">
-                <rect width="31.88" height="31.88" fill="white" />
-              </clipPath>
-            </defs>
-          </svg>
-        </div>
-        <div class="multiply__feature--blue">
-          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-            <g clip-path="url(#clip0_509_682)">
-              <path
-                d="M28.49 12.55H19.33V3.39C19.33 1.52 17.81 0 15.94 0C14.07 0 12.55 1.52 12.55 3.39V12.55H3.39C1.52 12.55 0 14.07 0 15.94C0 17.81 1.52 19.33 3.39 19.33H12.55V28.5C12.55 30.37 14.07 31.89 15.94 31.89C17.81 31.89 19.33 30.37 19.33 28.5V19.33H28.49C30.36 19.33 31.88 17.81 31.88 15.94C31.88 14.07 30.36 12.55 28.49 12.55Z"
-                fill="#387ADF" />
-            </g>
-            <defs>
-              <clipPath id="clip0_509_682">
-                <rect width="31.88" height="31.88" fill="white" />
-              </clipPath>
-            </defs>
-          </svg>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- endPageFeature -->
-  <!-- startPageExperience -->
-  <div class="container--fluid container__experience--marign">
-    <div class="row col-12">
-      <div class="frame__imgExperience col-6 position-relative">
-        <div class="imgPhoneExperience">
-          <img src="./image/imgPhoneExperience.svg" alt="">
-        </div>
-        <div class="bg__experience">
-          <svg xmlns="http://www.w3.org/2000/svg" width="759" height="778" viewBox="0 0 759 778" fill="none">
-            <g opacity="0.8" filter="url(#filter0_f_504_7127)">
-              <path
-                d="M503.365 157.918C630.971 231.591 674.692 394.76 601.019 522.366C527.346 649.972 364.177 693.693 236.571 620.019C108.965 546.346 65.244 383.177 138.917 255.571C212.591 127.965 375.76 84.2443 503.365 157.918Z"
-                fill="url(#paint0_linear_504_7127)" />
-            </g>
-            <defs>
-              <filter id="filter0_f_504_7127" x="-18.8708" y="0.129395" width="777.678" height="777.678"
-                filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
-                <feGaussianBlur stdDeviation="61" result="effect1_foregroundBlur_504_7127" />
-              </filter>
-              <linearGradient id="paint0_linear_504_7127" x1="158.626" y1="213.404" x2="620.727" y2="480.198"
-                gradientUnits="userSpaceOnUse">
-                <stop stop-color="#4E95FF" />
-                <stop offset="1" stop-color="#24DDD2" />
-              </linearGradient>
-            </defs>
-          </svg>
-        </div>
-        <div class="dot__experience--blue">
-          <svg xmlns="http://www.w3.org/2000/svg" width="41" height="41" viewBox="0 0 41 41" fill="none">
-            <g clip-path="url(#clip0_509_674)">
-              <path
-                d="M20.14 40.28C31.263 40.28 40.28 31.263 40.28 20.14C40.28 9.01698 31.263 0 20.14 0C9.01698 0 0 9.01698 0 20.14C0 31.263 9.01698 40.28 20.14 40.28Z"
-                fill="url(#paint0_linear_509_674)" />
-            </g>
-            <defs>
-              <linearGradient id="paint0_linear_509_674" x1="20.14" y1="3.78" x2="20.14" y2="48.35"
-                gradientUnits="userSpaceOnUse">
-                <stop stop-color="#37CDF3" />
-                <stop offset="0.13" stop-color="#3EB8F4" />
-                <stop offset="0.37" stop-color="#4B97F6" />
-                <stop offset="0.6" stop-color="#5480F7" />
-                <stop offset="0.82" stop-color="#5A71F8" />
-                <stop offset="1" stop-color="#5C6DF9" />
-              </linearGradient>
-              <clipPath id="clip0_509_674">
-                <rect width="40.28" height="40.28" fill="white" />
-              </clipPath>
-            </defs>
-          </svg>
-        </div>
-        <div class="dot__experience--blueReverse-1">
-          <svg xmlns="http://www.w3.org/2000/svg" width="41" height="41" viewBox="0 0 41 41" fill="none">
-            <g clip-path="url(#clip0_509_648)">
-              <path
-                d="M20.14 40.28C31.263 40.28 40.28 31.263 40.28 20.14C40.28 9.01698 31.263 0 20.14 0C9.01698 0 0 9.01698 0 20.14C0 31.263 9.01698 40.28 20.14 40.28Z"
-                fill="url(#paint0_linear_509_648)" fill-opacity="0.7" />
-            </g>
-            <defs>
-              <linearGradient id="paint0_linear_509_648" x1="20.14" y1="3.78" x2="20.14" y2="48.35"
-                gradientUnits="userSpaceOnUse">
-                <stop stop-color="#37CDF3" />
-                <stop offset="0.13" stop-color="#3EB8F4" />
-                <stop offset="0.37" stop-color="#4B97F6" />
-                <stop offset="0.6" stop-color="#5480F7" />
-                <stop offset="0.82" stop-color="#5A71F8" />
-                <stop offset="1" stop-color="#5C6DF9" />
-              </linearGradient>
-              <clipPath id="clip0_509_648">
-                <rect width="40.28" height="40.28" fill="white" />
-              </clipPath>
-            </defs>
-          </svg>
-        </div>
-        <div class="dot__experience--blue-2">
-          <svg xmlns="http://www.w3.org/2000/svg" width="41" height="41" viewBox="0 0 41 41" fill="none">
-            <g clip-path="url(#clip0_509_648)">
-              <path
-                d="M20.14 40.28C31.263 40.28 40.28 31.263 40.28 20.14C40.28 9.01698 31.263 0 20.14 0C9.01698 0 0 9.01698 0 20.14C0 31.263 9.01698 40.28 20.14 40.28Z"
-                fill="url(#paint0_linear_509_648)" fill-opacity="0.7" />
-            </g>
-            <defs>
-              <linearGradient id="paint0_linear_509_648" x1="20.14" y1="3.78" x2="20.14" y2="48.35"
-                gradientUnits="userSpaceOnUse">
-                <stop stop-color="#37CDF3" />
-                <stop offset="0.13" stop-color="#3EB8F4" />
-                <stop offset="0.37" stop-color="#4B97F6" />
-                <stop offset="0.6" stop-color="#5480F7" />
-                <stop offset="0.82" stop-color="#5A71F8" />
-                <stop offset="1" stop-color="#5C6DF9" />
-              </linearGradient>
-              <clipPath id="clip0_509_648">
-                <rect width="40.28" height="40.28" fill="white" />
-              </clipPath>
-            </defs>
-          </svg>
-        </div>
-        <div class="dot__experience--white">
-          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
-            <g clip-path="url(#clip0_509_688)">
-              <path
-                d="M14.95 29.89C6.7 29.89 0 23.18 0 14.95C0 6.72 6.7 0 14.95 0C23.2 0 29.89 6.71 29.89 14.95C29.89 23.19 23.19 29.9 14.95 29.9V29.89ZM14.95 5.45C9.71 5.45 5.45 9.71 5.45 14.95C5.45 20.19 9.71 24.45 14.95 24.45C20.19 24.45 24.45 20.19 24.45 14.95C24.45 9.71 20.19 5.45 14.95 5.45Z"
-                fill="white" />
-            </g>
-            <defs>
-              <clipPath id="clip0_509_688">
-                <rect width="29.89" height="29.89" fill="white" />
-              </clipPath>
-            </defs>
-          </svg>
-        </div>
-        <div class="multiply__experience--white-1">
-          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-            <g clip-path="url(#clip0_509_664)">
-              <path
-                d="M28.49 12.55H19.33V3.39C19.33 1.52 17.81 0 15.94 0C14.07 0 12.55 1.52 12.55 3.39V12.55H3.39C1.52 12.55 0 14.07 0 15.94C0 17.81 1.52 19.33 3.39 19.33H12.55V28.5C12.55 30.37 14.07 31.89 15.94 31.89C17.81 31.89 19.33 30.37 19.33 28.5V19.33H28.49C30.36 19.33 31.88 17.81 31.88 15.94C31.88 14.07 30.36 12.55 28.49 12.55Z"
-                fill="white" />
-            </g>
-            <defs>
-              <clipPath id="clip0_509_664">
-                <rect width="31.88" height="31.88" fill="white" />
-              </clipPath>
-            </defs>
-          </svg>
-        </div>
-        <div class="multiply__experience--white-2">
-          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-            <g clip-path="url(#clip0_509_707)">
-              <path
-                d="M28.49 12.55H19.33V3.39C19.33 1.52 17.81 0 15.94 0C14.07 0 12.55 1.52 12.55 3.39V12.55H3.39C1.52 12.55 0 14.07 0 15.94C0 17.81 1.52 19.33 3.39 19.33H12.55V28.5C12.55 30.37 14.07 31.89 15.94 31.89C17.81 31.89 19.33 30.37 19.33 28.5V19.33H28.49C30.36 19.33 31.88 17.81 31.88 15.94C31.88 14.07 30.36 12.55 28.49 12.55Z"
-                fill="#50C4ED" />
-            </g>
-            <defs>
-              <clipPath id="clip0_509_707">
-                <rect width="31.88" height="31.88" fill="white" />
-              </clipPath>
-            </defs>
-          </svg>
-        </div>
-        <div class="multiply__experience--blue">
-          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-            <g clip-path="url(#clip0_509_662)">
-              <path
-                d="M28.49 12.55H19.33V3.39C19.33 1.52 17.81 0 15.94 0C14.07 0 12.55 1.52 12.55 3.39V12.55H3.39C1.52 12.55 0 14.07 0 15.94C0 17.81 1.52 19.33 3.39 19.33H12.55V28.5C12.55 30.37 14.07 31.89 15.94 31.89C17.81 31.89 19.33 30.37 19.33 28.5V19.33H28.49C30.36 19.33 31.88 17.81 31.88 15.94C31.88 14.07 30.36 12.55 28.49 12.55Z"
-                fill="#387ADF" />
-            </g>
-            <defs>
-              <clipPath id="clip0_509_662">
-                <rect width="31.88" height="31.88" fill="white" />
-              </clipPath>
-            </defs>
-          </svg>
-        </div>
-      </div>
-      <!-- *************************** -->
-      <div class="frame__contentExperience col-6">
-        <h1> Trải nghiệm Zup </h1>
-        <p style="margin-top: 16px;">Đăng kí trải nghiệm Zup</p>
-        <p class="ps-5" style="margin-top: 44px;"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-            viewBox="0 0 24 24" fill="none">
-            <path d="M5 20C5 16.134 8.13401 13 12 13C15.866 13 19 16.134 19 20" stroke="#387ADF" stroke-width="2"
-              stroke-linecap="round" stroke-linejoin="round" />
+        <form
+          class="d-flex justify-content-center"
+          style="padding-right: 15em; margin-top: 24px"
+        >
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email:"
+          />
+          <input type="submit" class="text-bg-primary" />
+        </form>
+        <div class="d-flex justify-content-center" style="margin-top: 64px">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="1132"
+            height="2"
+            viewBox="0 0 1132 2"
+            fill="none"
+          >
             <path
-              d="M12 10C14.2091 10 16 8.20914 16 6C16 3.79086 14.2091 2 12 2C9.79086 2 8 3.79086 8 6C8 8.20914 9.79086 10 12 10Z"
-              stroke="#387ADF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-          </svg><span style="padding-left: 22px;">Bước 1:
-            Điền thông tin cơ bản</span></p>
-        <p class="ps-5" style="margin-top: 44px;"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28"
-            viewBox="0 0 28 28" fill="none">
-            <path
-              d="M10.5001 15.1667C11.7887 15.1667 12.8334 14.122 12.8334 12.8333C12.8334 11.5447 11.7887 10.5 10.5001 10.5C9.21142 10.5 8.16675 11.5447 8.16675 12.8333C8.16675 14.122 9.21142 15.1667 10.5001 15.1667Z"
-              stroke="#387ADF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-            <path
-              d="M23.3333 7H4.66667C4.02233 7 3.5 7.52233 3.5 8.16667V19.8333C3.5 20.4777 4.02234 21 4.66667 21H23.3333C23.9777 21 24.5 20.4777 24.5 19.8333V8.16667C24.5 7.52233 23.9777 7 23.3333 7Z"
-              stroke="#387ADF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-            <path d="M7 21C7 19.067 8.567 17.5 10.5 17.5C12.433 17.5 14 19.067 14 21" stroke="#387ADF" stroke-width="2"
-              stroke-linecap="round" stroke-linejoin="round" />
-            <path d="M20.9999 16.3335L16.3333 16.3335" stroke="#387ADF" stroke-width="2" stroke-linecap="round"
-              stroke-linejoin="round" />
-            <path d="M21 12.8335L17.5 12.8335" stroke="#387ADF" stroke-width="2" stroke-linecap="round"
-              stroke-linejoin="round" />
-          </svg><span style="padding-left: 22px;">Bước 2:
-            Nhập số điện thoại đăng kí và xác thực mã OTP</span></p>
-        <p class="ps-5" style="margin-top: 44px;"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-            viewBox="0 0 24 24" fill="none">
-            <path
-              d="M19 3H5C4.44772 3 4 3.44771 4 4V10.1649C4 17.5464 10.2742 20.3516 11.7098 20.8968C11.9 20.9691 12.1 20.9691 12.2902 20.8968C13.7258 20.3516 20 17.5464 20 10.1649V4C20 3.44772 19.5523 3 19 3Z"
-              stroke="#387ADF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-            <path d="M15 9L11 13L9 11" stroke="#387ADF" stroke-width="2" stroke-linecap="round"
-              stroke-linejoin="round" />
-          </svg><span style="padding-left: 22px;">Bước 3:
-            Cài đặt mật khẩu cho tài khoản</span></p>
-        <p class="ps-5" style="margin-top: 44px;"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-            viewBox="0 0 24 24" fill="none">
-            <path d="M4 20H20" stroke="#387ADF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-            <path
-              d="M4 19.9998H8L19.2929 8.70696C19.6834 8.31643 19.6834 7.68327 19.2929 7.29274L16.7071 4.70696C16.3166 4.31643 15.6834 4.31643 15.2929 4.70696L4 15.9998V19.9998Z"
-              stroke="#387ADF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-            <path d="M12 8L16 12" stroke="#387ADF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-          </svg><span style="padding-left: 22px;">Bước 4:
-            Điền tên và thông tin để Zup ghi nhớ</span></p>
-        <p style="margin-top: 54px;">Vào trang chủ trải nghiệm Zup nhé</p>
-      </div>
-    </div>
-  </div>
-  <!-- endPageExperience -->
-  <!-- startPageEnd -->
-  <div class="container--fluid container__end--marign imgPhoneEnd">
-    <div class="row col-12">
-      <div class=" d-grid justify-content-center" style="z-index: 100;">
-        <img src="./image/imgPhoneEnd.svg" alt="">
-      </div>
-    </div>
-    <div class="bg__end--1 position-absolute" style="z-index: 3; top: -10em; ">
-      <svg xmlns="http://www.w3.org/2000/svg" width="671" height="745" viewBox="0 0 671 745" fill="none">
-        <g opacity="0.8" filter="url(#filter0_f_504_7126)">
-          <path
-            d="M388.968 622.763C241.622 622.763 122.174 503.315 122.174 355.968C122.174 208.622 241.622 89.1736 388.968 89.1736C536.315 89.1736 655.763 208.622 655.763 355.968C655.763 503.315 536.315 622.763 388.968 622.763Z"
-            fill="url(#paint0_linear_504_7126)" />
-        </g>
-        <defs>
-          <filter id="filter0_f_504_7126" x="0.173584" y="-32.8264" width="777.589" height="777.589"
-            filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
-            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
-            <feGaussianBlur stdDeviation="61" result="effect1_foregroundBlur_504_7126" />
-          </filter>
-          <linearGradient id="paint0_linear_504_7126" x1="659.778" y1="402.34" x2="126.189" y2="402.34"
-            gradientUnits="userSpaceOnUse">
-            <stop stop-color="#4E95FF" />
-            <stop offset="1" stop-color="#24DDD2" />
-          </linearGradient>
-        </defs>
-      </svg>
-    </div>
-    <div class="bg__end--2 position-absolute" style="z-index: 4; bottom: -4em; right: 9em;">
-      <svg xmlns="http://www.w3.org/2000/svg" width="671" height="745" viewBox="0 0 671 745" fill="none">
-        <g opacity="0.8" filter="url(#filter0_f_504_7126)">
-          <path
-            d="M388.968 622.763C241.622 622.763 122.174 503.315 122.174 355.968C122.174 208.622 241.622 89.1736 388.968 89.1736C536.315 89.1736 655.763 208.622 655.763 355.968C655.763 503.315 536.315 622.763 388.968 622.763Z"
-            fill="url(#paint0_linear_504_7126)" />
-        </g>
-        <defs>
-          <filter id="filter0_f_504_7126" x="0.173584" y="-32.8264" width="777.589" height="777.589"
-            filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
-            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
-            <feGaussianBlur stdDeviation="61" result="effect1_foregroundBlur_504_7126" />
-          </filter>
-          <linearGradient id="paint0_linear_504_7126" x1="659.778" y1="402.34" x2="126.189" y2="402.34"
-            gradientUnits="userSpaceOnUse">
-            <stop stop-color="#4E95FF" />
-            <stop offset="1" stop-color="#24DDD2" />
-          </linearGradient>
-        </defs>
-      </svg>
-    </div>
-    <div class="multiply__end--blue-1 position-absolute" style="z-index: 120; top: -1em; left: 33em;">
-      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-        <path
-          d="M28.49 12.55H19.33V3.39C19.33 1.52 17.81 0 15.94 0C14.07 0 12.55 1.52 12.55 3.39V12.55H3.39C1.52 12.55 0 14.07 0 15.94C0 17.81 1.52 19.33 3.39 19.33H12.55V28.5C12.55 30.37 14.07 31.89 15.94 31.89C17.81 31.89 19.33 30.37 19.33 28.5V19.33H28.49C30.36 19.33 31.88 17.81 31.88 15.94C31.88 14.07 30.36 12.55 28.49 12.55Z"
-          fill="#387ADF" />
-      </svg>
-    </div>
-    <div class="multiply__end--blue-2 position-absolute" style="z-index: 121; bottom: 5em; left: 43em;">
-      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-        <path
-          d="M28.49 12.55H19.33V3.39C19.33 1.52 17.81 0 15.94 0C14.07 0 12.55 1.52 12.55 3.39V12.55H3.39C1.52 12.55 0 14.07 0 15.94C0 17.81 1.52 19.33 3.39 19.33H12.55V28.5C12.55 30.37 14.07 31.89 15.94 31.89C17.81 31.89 19.33 30.37 19.33 28.5V19.33H28.49C30.36 19.33 31.88 17.81 31.88 15.94C31.88 14.07 30.36 12.55 28.49 12.55Z"
-          fill="#387ADF" />
-      </svg>
-    </div>
-    <div class="multiply__end--blue-3 position-absolute" style="z-index: 122; bottom: 27em; right: 16em;">
-      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-        <path
-          d="M28.49 12.55H19.33V3.39C19.33 1.52 17.81 0 15.94 0C14.07 0 12.55 1.52 12.55 3.39V12.55H3.39C1.52 12.55 0 14.07 0 15.94C0 17.81 1.52 19.33 3.39 19.33H12.55V28.5C12.55 30.37 14.07 31.89 15.94 31.89C17.81 31.89 19.33 30.37 19.33 28.5V19.33H28.49C30.36 19.33 31.88 17.81 31.88 15.94C31.88 14.07 30.36 12.55 28.49 12.55Z"
-          fill="#387ADF" />
-      </svg>
-    </div>
-    <div class="multiply__end--blueBlur position-absolute" style="z-index: 123; top: -1em; right: 37em;">
-      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-        <g clip-path="url(#clip0_509_707)">
-          <path
-            d="M28.49 12.55H19.33V3.39C19.33 1.52 17.81 0 15.94 0C14.07 0 12.55 1.52 12.55 3.39V12.55H3.39C1.52 12.55 0 14.07 0 15.94C0 17.81 1.52 19.33 3.39 19.33H12.55V28.5C12.55 30.37 14.07 31.89 15.94 31.89C17.81 31.89 19.33 30.37 19.33 28.5V19.33H28.49C30.36 19.33 31.88 17.81 31.88 15.94C31.88 14.07 30.36 12.55 28.49 12.55Z"
-            fill="#50C4ED" />
-        </g>
-        <defs>
-          <clipPath id="clip0_509_707">
-            <rect width="31.88" height="31.88" fill="white" />
-          </clipPath>
-        </defs>
-      </svg>
-    </div>
-    <div class="multiply__end--white-1 position-absolute" style="z-index: 124; top: 7em; left: 12em;">
-      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-        <g clip-path="url(#clip0_509_680)">
-          <path
-            d="M28.49 12.55H19.33V3.39C19.33 1.52 17.81 0 15.94 0C14.07 0 12.55 1.52 12.55 3.39V12.55H3.39C1.52 12.55 0 14.07 0 15.94C0 17.81 1.52 19.33 3.39 19.33H12.55V28.5C12.55 30.37 14.07 31.89 15.94 31.89C17.81 31.89 19.33 30.37 19.33 28.5V19.33H28.49C30.36 19.33 31.88 17.81 31.88 15.94C31.88 14.07 30.36 12.55 28.49 12.55Z"
-            fill="white" />
-        </g>
-        <defs>
-          <clipPath id="clip0_509_680">
-            <rect width="31.88" height="31.88" fill="white" />
-          </clipPath>
-        </defs>
-      </svg>
-    </div>
-    <div class="multiply__end--white-2 position-absolute" style="z-index: 125; bottom: 18em; right: 20em;">
-      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-        <g clip-path="url(#clip0_509_680)">
-          <path
-            d="M28.49 12.55H19.33V3.39C19.33 1.52 17.81 0 15.94 0C14.07 0 12.55 1.52 12.55 3.39V12.55H3.39C1.52 12.55 0 14.07 0 15.94C0 17.81 1.52 19.33 3.39 19.33H12.55V28.5C12.55 30.37 14.07 31.89 15.94 31.89C17.81 31.89 19.33 30.37 19.33 28.5V19.33H28.49C30.36 19.33 31.88 17.81 31.88 15.94C31.88 14.07 30.36 12.55 28.49 12.55Z"
-            fill="white" />
-        </g>
-        <defs>
-          <clipPath id="clip0_509_680">
-            <rect width="31.88" height="31.88" fill="white" />
-          </clipPath>
-        </defs>
-      </svg>
-    </div>
-    <div class="dot__end--blue-1 position-absolute " style="z-index: 126; bottom: 20em; right: 10em;">
-      <svg xmlns="http://www.w3.org/2000/svg" width="41" height="41" viewBox="0 0 41 41" fill="none">
-        <g clip-path="url(#clip0_509_713)">
-          <path
-            d="M20.14 40.28C31.263 40.28 40.28 31.263 40.28 20.14C40.28 9.01698 31.263 0 20.14 0C9.01698 0 0 9.01698 0 20.14C0 31.263 9.01698 40.28 20.14 40.28Z"
-            fill="url(#paint0_linear_509_713)" />
-        </g>
-        <defs>
-          <linearGradient id="paint0_linear_509_713" x1="20.14" y1="3.78" x2="20.14" y2="48.35"
-            gradientUnits="userSpaceOnUse">
-            <stop stop-color="#37CDF3" />
-            <stop offset="0.13" stop-color="#3EB8F4" />
-            <stop offset="0.37" stop-color="#4B97F6" />
-            <stop offset="0.6" stop-color="#5480F7" />
-            <stop offset="0.82" stop-color="#5A71F8" />
-            <stop offset="1" stop-color="#5C6DF9" />
-          </linearGradient>
-          <clipPath id="clip0_509_713">
-            <rect width="40.28" height="40.28" fill="white" />
-          </clipPath>
-        </defs>
-      </svg>
-    </div>
-    <div class="dot__end--blue-2 position-absolute" style="z-index: 127; top: -4em; left: 48em;">
-      <svg xmlns="http://www.w3.org/2000/svg" width="41" height="41" viewBox="0 0 41 41" fill="none">
-        <g clip-path="url(#clip0_509_713)">
-          <path
-            d="M20.14 40.28C31.263 40.28 40.28 31.263 40.28 20.14C40.28 9.01698 31.263 0 20.14 0C9.01698 0 0 9.01698 0 20.14C0 31.263 9.01698 40.28 20.14 40.28Z"
-            fill="url(#paint0_linear_509_713)" />
-        </g>
-        <defs>
-          <linearGradient id="paint0_linear_509_713" x1="20.14" y1="3.78" x2="20.14" y2="48.35"
-            gradientUnits="userSpaceOnUse">
-            <stop stop-color="#37CDF3" />
-            <stop offset="0.13" stop-color="#3EB8F4" />
-            <stop offset="0.37" stop-color="#4B97F6" />
-            <stop offset="0.6" stop-color="#5480F7" />
-            <stop offset="0.82" stop-color="#5A71F8" />
-            <stop offset="1" stop-color="#5C6DF9" />
-          </linearGradient>
-          <clipPath id="clip0_509_713">
-            <rect width="40.28" height="40.28" fill="white" />
-          </clipPath>
-        </defs>
-      </svg>
-    </div>
-    <div class="dot__end--blue-3 position-absolute" style="z-index: 128; top: 12em; left: 18em;">
-      <svg xmlns="http://www.w3.org/2000/svg" width="41" height="41" viewBox="0 0 41 41" fill="none">
-        <g clip-path="url(#clip0_509_713)">
-          <path
-            d="M20.14 40.28C31.263 40.28 40.28 31.263 40.28 20.14C40.28 9.01698 31.263 0 20.14 0C9.01698 0 0 9.01698 0 20.14C0 31.263 9.01698 40.28 20.14 40.28Z"
-            fill="url(#paint0_linear_509_713)" />
-        </g>
-        <defs>
-          <linearGradient id="paint0_linear_509_713" x1="20.14" y1="3.78" x2="20.14" y2="48.35"
-            gradientUnits="userSpaceOnUse">
-            <stop stop-color="#37CDF3" />
-            <stop offset="0.13" stop-color="#3EB8F4" />
-            <stop offset="0.37" stop-color="#4B97F6" />
-            <stop offset="0.6" stop-color="#5480F7" />
-            <stop offset="0.82" stop-color="#5A71F8" />
-            <stop offset="1" stop-color="#5C6DF9" />
-          </linearGradient>
-          <clipPath id="clip0_509_713">
-            <rect width="40.28" height="40.28" fill="white" />
-          </clipPath>
-        </defs>
-      </svg>
-    </div>
-    <div class="dot__end--white-1 position-absolute" style="z-index: 129; top: 20em; left: 12em;">
-      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
-        <g clip-path="url(#clip0_509_688)">
-          <path
-            d="M14.95 29.89C6.7 29.89 0 23.18 0 14.95C0 6.72 6.7 0 14.95 0C23.2 0 29.89 6.71 29.89 14.95C29.89 23.19 23.19 29.9 14.95 29.9V29.89ZM14.95 5.45C9.71 5.45 5.45 9.71 5.45 14.95C5.45 20.19 9.71 24.45 14.95 24.45C20.19 24.45 24.45 20.19 24.45 14.95C24.45 9.71 20.19 5.45 14.95 5.45Z"
-            fill="white" />
-        </g>
-        <defs>
-          <clipPath id="clip0_509_688">
-            <rect width="29.89" height="29.89" fill="white" />
-          </clipPath>
-        </defs>
-      </svg>
-    </div>
-    <div class="dot__end--white-4 position-absolute" style="z-index: 130; top: 2em; left: 19em;">
-      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
-        <g clip-path="url(#clip0_509_688)">
-          <path
-            d="M14.95 29.89C6.7 29.89 0 23.18 0 14.95C0 6.72 6.7 0 14.95 0C23.2 0 29.89 6.71 29.89 14.95C29.89 23.19 23.19 29.9 14.95 29.9V29.89ZM14.95 5.45C9.71 5.45 5.45 9.71 5.45 14.95C5.45 20.19 9.71 24.45 14.95 24.45C20.19 24.45 24.45 20.19 24.45 14.95C24.45 9.71 20.19 5.45 14.95 5.45Z"
-            fill="white" />
-        </g>
-        <defs>
-          <clipPath id="clip0_509_688">
-            <rect width="29.89" height="29.89" fill="white" />
-          </clipPath>
-        </defs>
-      </svg>
-    </div>
-    <div class="dot__end--white-2 position-absolute" style="z-index: 131; bottom: 34em; right: 16em;">
-      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
-        <g clip-path="url(#clip0_509_688)">
-          <path
-            d="M14.95 29.89C6.7 29.89 0 23.18 0 14.95C0 6.72 6.7 0 14.95 0C23.2 0 29.89 6.71 29.89 14.95C29.89 23.19 23.19 29.9 14.95 29.9V29.89ZM14.95 5.45C9.71 5.45 5.45 9.71 5.45 14.95C5.45 20.19 9.71 24.45 14.95 24.45C20.19 24.45 24.45 20.19 24.45 14.95C24.45 9.71 20.19 5.45 14.95 5.45Z"
-            fill="white" />
-        </g>
-        <defs>
-          <clipPath id="clip0_509_688">
-            <rect width="29.89" height="29.89" fill="white" />
-          </clipPath>
-        </defs>
-      </svg>
-    </div>
-    <div class="dot__end--white-3 position-absolute" style="z-index: 131; bottom: 8em; right: 26em;">
-      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
-        <g clip-path="url(#clip0_509_688)">
-          <path
-            d="M14.95 29.89C6.7 29.89 0 23.18 0 14.95C0 6.72 6.7 0 14.95 0C23.2 0 29.89 6.71 29.89 14.95C29.89 23.19 23.19 29.9 14.95 29.9V29.89ZM14.95 5.45C9.71 5.45 5.45 9.71 5.45 14.95C5.45 20.19 9.71 24.45 14.95 24.45C20.19 24.45 24.45 20.19 24.45 14.95C24.45 9.71 20.19 5.45 14.95 5.45Z"
-            fill="white" />
-        </g>
-        <defs>
-          <clipPath id="clip0_509_688">
-            <rect width="29.89" height="29.89" fill="white" />
-          </clipPath>
-        </defs>
-      </svg>
-    </div>
-  </div>
-  <!-- endPageEnd -->
-  <!-- contactWebsite -->
-  <div class="container--fluid container_noneList">
-    <div class="row col-12" style="padding-left: 143px; padding-right: 143px;">
-      <div class="contactLinked col-3">
-        <ul>
-          <li>Liên kết</li>
-          <li class="pt-2">Trang chủ</li>
-          <li class="pt-1">Giới thiệu</li>
-          <li class="pt-1">Diễn đàn</li>
-        </ul>
-      </div>
-
-      <div class="contactSupport col-3">
-        <ul>
-          <li>Hỗ trợ</li>
-          <li class="pt-2">Điều khoản</li>
-          <li class="pt-1">Câu hỏi </li>
-          <li class="pt-1">Quyền riêng tư</li>
-          <li class="pt-1">Bảo mật</li>
-          <li class="pt-1">Khả năng tiếp cận</li>
-        </ul>
-      </div>
-
-      <div class="contactApp col-3">
-        <ul>
-          <li>Ứng dụng</li>
-          <li class="pt-2">Tải ứng dụng </li>
-          <li class="pt-1">Đánh giá</li>
-          <li class="pt-1">Trò chuyện trực tiếp</li>
-        </ul>
-      </div>
-
-      <div class="contactMe col-3">
-        <ul>
-          <li>Liên hệ</li>
-          <li class="pt-2"><img class="pe-2" src="./image/mess/icon/vuesax/bold/vuesax/bold/vuesax/bold/messenger.svg"
-              alt=""> Zupwithyou@gmail.com</li>
-          <li class="pt-1"><img class="pe-2"
-              src="./image/ringthephone/icon/vuesax/bold/icon/vuesax/bold/vuesax/bold/call-calling.svg"
-              alt="">0365200702</li>
-          <li class="pt-1"><img class="pe-2"
-              src="./image/location/icon/vuesax/bold/vuesax/bold/vuesax/bold/location.svg" alt="">80 Trúc Khê, Đống Đa,
-            Hà Nội</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-
-  <div class="container--fluid container__ketthuc">
-    <div class="row col-12">
-      <div class="d-flex justify-content-center">
-        <h2 class="p-5">Thông báo</h2>
-        <h2 class="p-5">Theo dõi Zup</h2>
-      </div>
-      <div class="d-flex justify-content-center gap-5">
-        <p style="color: var(--neutral-04, #777);
-      font-family: Nunito;
-      font-size: 18px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 27px;">Đăng kí để nhận ngay thông báo</p>
-        <div class="imgTwiter">
-          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-            <g clip-path="url(#clip0_484_7016)">
-              <path
-                d="M24.5 0H7.5C3.35786 0 0 3.35786 0 7.5V24.5C0 28.6421 3.35786 32 7.5 32H24.5C28.6421 32 32 28.6421 32 24.5V7.5C32 3.35786 28.6421 0 24.5 0Z"
-                fill="white" />
-              <path
-                d="M24.5 0H7.5C3.35786 0 0 3.35786 0 7.5V24.5C0 28.6421 3.35786 32 7.5 32H24.5C28.6421 32 32 28.6421 32 24.5V7.5C32 3.35786 28.6421 0 24.5 0Z"
-                fill="#1D9BF0" />
-              <path
-                d="M24.9465 11.4264C24.9603 11.6247 24.9603 11.8231 24.9603 12.0234C24.9603 18.123 20.3168 25.1577 11.8259 25.1577V25.154C9.31752 25.1576 6.86113 24.4392 4.75 23.0846C5.11475 23.1285 5.48125 23.1504 5.84875 23.1512C7.92771 23.1529 9.94685 22.4556 11.5817 21.1714C10.6185 21.1532 9.68501 20.8344 8.9118 20.2596C8.13859 19.6849 7.56431 18.8829 7.26925 17.9657C7.96085 18.0991 8.67382 18.0719 9.35325 17.8862C7.19975 17.4511 5.65037 15.559 5.65037 13.3615V13.303C6.29236 13.6606 7.01085 13.8587 7.74538 13.8807C5.71713 12.5251 5.09188 9.82674 6.31663 7.71699C7.47554 9.14312 8.92149 10.3095 10.5606 11.1404C12.1996 11.9712 13.9952 12.448 15.8305 12.5397C15.6475 11.752 15.6745 10.9301 15.9089 10.1561C16.1432 9.38215 16.5767 8.68327 17.1659 8.12937C19.0251 6.38162 21.9493 6.47124 23.697 8.32949C24.7308 8.1254 25.7221 7.74642 26.6284 7.20887C26.2838 8.2777 25.5626 9.18496 24.5991 9.76187C25.5142 9.65406 26.4078 9.40911 27.25 9.03524C26.6305 9.96299 25.8505 10.7726 24.9465 11.4264Z"
-                fill="white" />
-            </g>
-            <defs>
-              <clipPath id="clip0_484_7016">
-                <rect width="32" height="32" fill="white" />
-              </clipPath>
-            </defs>
+              d="M1.5 1H1130.5"
+              stroke="#B6B6B6"
+              stroke-width="2"
+              stroke-linecap="round"
+            />
           </svg>
         </div>
-        <div class="imgInsta">
-          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-            <g clip-path="url(#clip0_484_7009)">
-              <path
-                d="M24.5 0H7.5C3.35786 0 0 3.35786 0 7.5V24.5C0 28.6421 3.35786 32 7.5 32H24.5C28.6421 32 32 28.6421 32 24.5V7.5C32 3.35786 28.6421 0 24.5 0Z"
-                fill="url(#paint0_radial_484_7009)" />
-              <path
-                d="M24.5 0H7.5C3.35786 0 0 3.35786 0 7.5V24.5C0 28.6421 3.35786 32 7.5 32H24.5C28.6421 32 32 28.6421 32 24.5V7.5C32 3.35786 28.6421 0 24.5 0Z"
-                fill="url(#paint1_radial_484_7009)" />
-              <path
-                d="M16.0011 3.5C12.6064 3.5 12.1803 3.51488 10.847 3.5755C9.51625 3.6365 8.60787 3.84712 7.81313 4.15625C6.99088 4.4755 6.2935 4.90262 5.59875 5.59762C4.90338 6.2925 4.47625 6.98987 4.156 7.81175C3.846 8.60675 3.63512 9.5155 3.57525 10.8456C3.51562 12.179 3.5 12.6053 3.5 16.0001C3.5 19.395 3.515 19.8197 3.5755 21.153C3.63675 22.4837 3.84738 23.3921 4.15625 24.1869C4.47575 25.0091 4.90288 25.7065 5.59788 26.4013C6.2925 27.0966 6.98988 27.5247 7.8115 27.844C8.60687 28.1531 9.51537 28.3637 10.8459 28.4247C12.1792 28.4854 12.605 28.5002 15.9996 28.5002C19.3948 28.5002 19.8195 28.4854 21.1528 28.4247C22.4835 28.3637 23.3929 28.1531 24.1882 27.844C25.0101 27.5247 25.7065 27.0966 26.401 26.4013C27.0964 25.7065 27.5234 25.0091 27.8438 24.1873C28.151 23.3921 28.362 22.4835 28.4245 21.1532C28.4844 19.82 28.5 19.395 28.5 16.0001C28.5 12.6053 28.4844 12.1792 28.4245 10.8459C28.362 9.51512 28.151 8.60688 27.8438 7.81213C27.5234 6.98988 27.0964 6.2925 26.401 5.59762C25.7057 4.90237 25.0104 4.47525 24.1875 4.15637C23.3906 3.84712 22.4817 3.63638 21.151 3.5755C19.8176 3.51488 19.3931 3.5 15.9972 3.5H16.0011ZM14.8798 5.75262C15.2126 5.75213 15.584 5.75262 16.0011 5.75262C19.3388 5.75262 19.7342 5.76463 21.0522 5.8245C22.271 5.88025 22.9325 6.08388 23.3731 6.255C23.9565 6.4815 24.3724 6.75238 24.8096 7.19C25.2471 7.6275 25.5179 8.04412 25.745 8.6275C25.9161 9.0675 26.12 9.729 26.1755 10.9478C26.2354 12.2655 26.2484 12.6612 26.2484 15.9972C26.2484 19.3333 26.2354 19.7291 26.1755 21.0467C26.1198 22.2655 25.9161 22.927 25.745 23.3671C25.5185 23.9505 25.2471 24.3659 24.8096 24.8031C24.3721 25.2406 23.9568 25.5114 23.3731 25.738C22.933 25.9099 22.271 26.113 21.0522 26.1688C19.7345 26.2286 19.3388 26.2416 16.0011 26.2416C12.6634 26.2416 12.2677 26.2286 10.9501 26.1688C9.73137 26.1125 9.06987 25.9089 8.62887 25.7377C8.04562 25.5111 7.62887 25.2404 7.19137 24.8029C6.75387 24.3654 6.48312 23.9498 6.256 23.3661C6.08488 22.926 5.881 22.2645 5.8255 21.0457C5.76562 19.728 5.75362 19.3323 5.75362 15.9941C5.75362 12.6561 5.76562 12.2624 5.8255 10.9446C5.88125 9.72587 6.08488 9.06437 6.256 8.62375C6.48263 8.04037 6.75388 7.62375 7.1915 7.18625C7.629 6.74875 8.04562 6.47787 8.629 6.25087C9.06962 6.079 9.73137 5.87587 10.9501 5.81987C12.1032 5.76775 12.5501 5.75212 14.8798 5.7495V5.75262ZM22.6736 7.82812C21.8455 7.82812 21.1736 8.49938 21.1736 9.32763C21.1736 10.1558 21.8455 10.8276 22.6736 10.8276C23.5018 10.8276 24.1736 10.1558 24.1736 9.32763C24.1736 8.4995 23.5018 7.82762 22.6736 7.82762V7.82812ZM16.0011 9.58075C12.4561 9.58075 9.58187 12.455 9.58187 16.0001C9.58187 19.5452 12.4561 22.4181 16.0011 22.4181C19.5462 22.4181 22.4195 19.5452 22.4195 16.0001C22.4195 12.4551 19.546 9.58075 16.0009 9.58075H16.0011ZM16.0011 11.8334C18.3022 11.8334 20.1679 13.6988 20.1679 16.0001C20.1679 18.3013 18.3022 20.1669 16.0011 20.1669C13.6999 20.1669 11.8345 18.3013 11.8345 16.0001C11.8345 13.6988 13.6999 11.8334 16.0011 11.8334Z"
-                fill="white" />
-            </g>
-            <defs>
-              <radialGradient id="paint0_radial_484_7009" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
-                gradientTransform="translate(8.5 34.4646) rotate(-90) scale(31.7144 29.4969)">
-                <stop stop-color="#FFDD55" />
-                <stop offset="0.1" stop-color="#FFDD55" />
-                <stop offset="0.5" stop-color="#FF543E" />
-                <stop offset="1" stop-color="#C837AB" />
-              </radialGradient>
-              <radialGradient id="paint1_radial_484_7009" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
-                gradientTransform="translate(-5.36012 2.30512) rotate(78.681) scale(14.1765 58.436)">
-                <stop stop-color="#3771C8" />
-                <stop offset="0.128" stop-color="#3771C8" />
-                <stop offset="1" stop-color="#6600FF" stop-opacity="0" />
-              </radialGradient>
-              <clipPath id="clip0_484_7009">
-                <rect width="32" height="32" fill="white" />
-              </clipPath>
-            </defs>
-          </svg>
-        </div>
-        <div class="imgFB">
-          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-            <g clip-path="url(#clip0_484_7014)">
-              <path
-                d="M5.84301 0C2.60624 0 0 2.60624 0 5.84301V26.157C0 29.3938 2.60624 32 5.84301 32H16.853V19.49H13.545V14.986H16.853V11.138C16.853 8.11482 18.8076 5.33901 23.31 5.33901C25.133 5.33901 26.481 5.51402 26.481 5.51402L26.375 9.72003C26.375 9.72003 25.0002 9.70704 23.5 9.70704C21.8764 9.70704 21.616 10.4551 21.616 11.6971V14.986H26.504L26.291 19.49H21.616V32.0001H26.157C29.3938 32.0001 32 29.3938 32 26.1571V5.84304C32 2.60627 29.3938 3.2e-05 26.157 3.2e-05H5.84298L5.84301 0Z"
-                fill="#1877F2" />
-            </g>
-            <defs>
-              <clipPath id="clip0_484_7014">
-                <rect width="32" height="32" fill="white" />
-              </clipPath>
-            </defs>
-          </svg>
-        </div>
+        <p
+          class="d-flex justify-content-center"
+          style="
+            margin-top: 96px;
+            color: var(--neutral-03, #5e5e5e);
+            font-family: Nunito;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 30px; /* 150% */
+          "
+        >
+          Copyright 2022 Zup.com All Rights Reserved
+        </p>
       </div>
-      <form class="d-flex justify-content-center" style="padding-right: 15em; margin-top: 24px;">
-        <input type="email" id="email" name="email" placeholder="Enter your email:">
-        <input type="submit" class="text-bg-primary">
-      </form>
-      <div class="d-flex justify-content-center" style="margin-top: 64px;">
-        <svg xmlns="http://www.w3.org/2000/svg" width="1132" height="2" viewBox="0 0 1132 2" fill="none">
-          <path d="M1.5 1H1130.5" stroke="#B6B6B6" stroke-width="2" stroke-linecap="round" />
-        </svg>
-      </div>
-      <p class="d-flex justify-content-center" style="margin-top: 96px; color: var(--neutral-03, #5E5E5E);
-      font-family: Nunito;
-      font-size: 20px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 30px; /* 150% */">Copyright 2022 Zup.com All Rights Reserved</p>
     </div>
-  </div>
-  <!-- linkdn js -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-    crossorigin="anonymous"></script>
-</body>
-
+    <!-- linkdn js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
