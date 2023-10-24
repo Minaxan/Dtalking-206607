@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+body {
+    width: 100%;
+}
+
 .nav-item li {
     list-style-type: none !important;
 }
@@ -478,14 +482,15 @@
     .bg_feature {
         position: absolute;
         z-index: 1;
-        top: -12em;
-        left: 15em;
+        top: -9em;
+        right: 0;
     }
 
     .dot_feature-blue1 {
         position: absolute;
         top: 4em;
-        right: 2em;
+        right: 4em;
+        z-index: 7;
     }
 
     .dot_feature-blue2 {
@@ -496,20 +501,20 @@
 
     .dot_feature-blue3 {
         position: absolute;
-        bottom: -3em;
-        right: 2em;
+        bottom: -1em;
+        right: 4em;
     }
 
     .dot_feature-white1 {
         z-index: 3;
         position: absolute;
-        top: -3em;
-        right: 7em;
+        top: -1em;
+        right: 29em;
     }
 
     .dot_feature-white2 {
         position: absolute;
-        top: -1em;
+        top: -3em;
         right: 17em;
         z-index: 3;
     }
@@ -523,7 +528,7 @@
 
     .multiply_feature-blue {
         position: absolute;
-        top: -6em;
+        top: -3em;
         right: 6em;
         z-index: 4;
     }
