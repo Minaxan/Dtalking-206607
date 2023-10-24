@@ -10,6 +10,10 @@ body {
     list-style-type: none !important;
 }
 
+.nav-item li:hover {
+    cursor: pointer;
+}
+
 .nav-item li:nth-child(1) {
     background-color: red;
     width: 2em;
