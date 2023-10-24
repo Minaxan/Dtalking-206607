@@ -104,7 +104,7 @@
 }
 
 .frame_contentFeature {
-    padding-top: 86px;
+    padding-top: 58px !important;
 }
 
 .frame_contentFeature h1 {
@@ -131,8 +131,60 @@
     list-style-type: none !important;
     display: flex;
     column-gap: 20px;
+    padding-top: 12px !important;
 }
 
+/* css Ex */
+.setting__MarginEx {
+    margin-top: 191px !important;
+}
+
+.setting__MarginEx--content {
+    margin-top: 100px !important;
+}
+
+.setting__MarginEx--content {
+    padding-left: 40px !important;
+}
+
+.frame_contentEx h1 {
+    color: #387ADF;
+    font-family: Nunito;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 80px;
+    /* 125% */
+}
+
+.frame_contentEx p {
+    color: #5C5C5C;
+    font-family: Nunito;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+    /* 125% */
+}
+
+.text-p-ex {
+    padding-top: 5px;
+}
+
+.setting_pdTextListEx li {
+    padding-top: 23px;
+    list-style-type: none;
+}
+
+/* css newfeed */
+.setting_marginFeedback {
+    margin-top: 217px !important;
+}
+
+
+.setting__MarginContact {
+    margin-top: 217px !important;
+}
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
@@ -429,6 +481,7 @@
         top: -12em;
         left: 15em;
     }
+
     .dot_feature-blue1 {
         position: absolute;
         top: 4em;
@@ -446,7 +499,7 @@
         bottom: -3em;
         right: 2em;
     }
-    
+
     .dot_feature-white1 {
         z-index: 3;
         position: absolute;
@@ -464,7 +517,7 @@
     .multiply_feature-bluefade {
         position: absolute;
         top: 0;
-        left:1em;
+        left: 1em;
         z-index: 4;
     }
 
@@ -474,6 +527,146 @@
         right: 6em;
         z-index: 4;
     }
+
+    /* repsonsive ex */
+    .frame_imgEx {
+        position: relative;
+        padding-left: 130px !important;
+    }
+
+    .imgPhoneEx {
+        position: absolute;
+        z-index: 2;
+    }
+
+    .bg_ex {
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: -1em;
+    }
+
+    .dot_ex-blue1 {
+        position: absolute;
+        z-index: 2;
+        top: 5em;
+        left: 8em;
+    }
+
+    .dot_ex-blue2 {
+        position: absolute;
+        z-index: 2;
+        top: 1em;
+        right: 2em;
+    }
+
+    .dot_ex-blue3 {
+        position: absolute;
+        z-index: 2;
+        bottom: 3em;
+        right: 1em;
+    }
+
+    .dot_ex-white {
+        position: absolute;
+        z-index: 2;
+        bottom: 17em;
+        right: 2em;
+    }
+
+    .multiply_ex-white1 {
+        position: absolute;
+        z-index: 2;
+        bottom: 26em;
+        right: 1em;
+    }
+
+    .multiply_ex-white2 {
+        position: absolute;
+        z-index: 2;
+        top: 30em;
+        left: 8em;
+    }
+
+    .multiply_ex-blue {
+        position: absolute;
+        z-index: 2;
+        bottom: 32em;
+        right: -1em;
+    }
+
+    .multiply_ex-bluefade {
+        position: absolute;
+        z-index: 2;
+        bottom: 5em;
+        left: 8em;
+    }
+
+    /* responsive newfeed */
+    .container__end--marign {
+        margin-top: 217px;
+    }
+
+    .container_noneList {
+        margin-top: 217px;
+    }
+
+    .container_noneList li {
+        list-style-type: none;
+    }
+
+    .contactLinked li:nth-child(1) {
+        color: var(--neutral-02, #444);
+        font-family: Nunito;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 60px;
+        /* 150% */
+    }
+
+    .contactSupport li:nth-child(1) {
+        color: var(--neutral-02, #444);
+        font-family: Nunito;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 60px;
+        /* 150% */
+    }
+
+    .contactApp li:nth-child(1) {
+        color: var(--neutral-02, #444);
+        font-family: Nunito;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 60px;
+        /* 150% */
+    }
+
+    .contactMe li:nth-child(1) {
+        color: var(--neutral-02, #444);
+        font-family: Nunito;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 60px;
+        /* 150% */
+    }
+
+    .container__ketthuc h2 {
+        color: var(--neutral-02, #444);
+        font-family: Nunito;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 60px;
+        /* 150% */
+    }
+
+    /* ****************************** */
+
 }
 
 
